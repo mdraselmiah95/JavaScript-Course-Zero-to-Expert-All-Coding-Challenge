@@ -17,9 +17,13 @@ GOOD LUCK 😀
 const calcAverage = (a, b, c) => (a + b + c) / 3;
 console.log(calcAverage(5, 3, 10));
 
-let avgDolhins = calcAverage(44, 23, 71);
-let avgKoalas = calcAverage(65, 54, 49);
-console.log(avgDolhins, avgKoalas);
+let scoreDolphins = calcAverage(85, 54, 41);
+let scoreKoalas = calcAverage(23, 34, 27);
+console.log(scoreDolphins, scoreKoalas);
+
+// let scoreDolhins = calcAverage(44, 23, 71);
+// let scoreKoalas = calcAverage(65, 54, 49);
+// console.log(scoreDolhins, scoreKoalas);
 
 const checkWinner = function (avgDolhins, avgKoalas) {
   if (avgDolhins >= 2 * avgKoalas) {
@@ -30,3 +34,8 @@ const checkWinner = function (avgDolhins, avgKoalas) {
     console.log("No one win 🦓");
   }
 };
+
+// checkWinner(scoreDolhins, scoreKoalas);
+// checkWinner(47, 120);
+
+checkWinner(scoreDolphins, scoreKoalas);
