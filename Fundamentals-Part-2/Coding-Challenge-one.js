@@ -13,3 +13,6 @@ HINT: To calculate average of 3 values, add them all together and divide by 3
 HINT: To check if number A is at least double number B, check for A >= 2 * B. Apply this to the team's average scores 😉
 GOOD LUCK 😀
 */
+
+const calcAverage = (a, b, c) => (a + b + c) / 3;
+console.log(calcAverage(5, 5, 10));
