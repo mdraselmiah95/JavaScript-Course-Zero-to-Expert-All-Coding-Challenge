@@ -15,4 +15,18 @@ GOOD LUCK 😀
 */
 
 const calcAverage = (a, b, c) => (a + b + c) / 3;
-console.log(calcAverage(5, 5, 10));
+console.log(calcAverage(5, 3, 10));
+
+let avgDolhins = calcAverage(44, 23, 71);
+let avgKoalas = calcAverage(65, 54, 49);
+console.log(avgDolhins, avgKoalas);
+
+const checkWinner = function (avgDolhins, avgKoalas) {
+  if (avgDolhins >= 2 * avgKoalas) {
+    console.log(`Dolhins win ${avgDolhins} vs ${avgKoalas}`);
+  } else if (avgKoalas >= 2 * avgDolhins) {
+    console.log(`Koalas win 🏆 ${avgKoalas} vs ${avgDolhins}`);
+  } else {
+    console.log("No one win 🦓");
+  }
+};
