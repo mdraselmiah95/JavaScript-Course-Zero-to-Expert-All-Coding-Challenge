@@ -28,11 +28,11 @@ console.log(scoreDolphins, scoreKoalas);
 
 const checkWinner = function (avgDolhins, avgKoalas) {
   if (avgDolhins >= 2 * avgKoalas) {
-    console.log(`Dolhins win 🍹 ${avgDolhins} vs ${avgKoalas}`);
+    console.log(`Dolhins win 🍹 (${avgDolhins} vs ${avgKoalas})`);
   } else if (avgKoalas >= 2 * avgDolhins) {
-    console.log(`Koalas win 🏆 ${avgKoalas} vs ${avgDolhins}`);
+    console.log(`Koalas win 🏆 (${avgKoalas} vs ${avgDolhins})`);
   } else {
-    console.log("No one win 🦓");
+    console.log("No Team win 🦓");
   }
 };
 
@@ -40,3 +40,4 @@ const checkWinner = function (avgDolhins, avgKoalas) {
 // checkWinner(47, 120);
 
 checkWinner(scoreDolphins, scoreKoalas);
+checkWinner(135, 360);
