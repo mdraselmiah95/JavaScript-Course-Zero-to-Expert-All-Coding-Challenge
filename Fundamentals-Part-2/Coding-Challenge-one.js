@@ -42,5 +42,5 @@ const checkWinner = function (avgDolhins, avgKoalas) {
 checkWinner(scoreDolphins, scoreKoalas);
 checkWinner(135, 360);
 
-checkWinner(scoreDolphins, scoreKoalas);
-checkWinner(129, 260);
+// checkWinner(scoreDolphins, scoreKoalas);
+// checkWinner(129, 260);
