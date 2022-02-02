@@ -149,3 +149,6 @@ if (friends.includes('Steven')) {
   console.log('You have a friend called Steven');
 }
 */
+
+// let person = new Array();
+// console.log(Array.prototype);
