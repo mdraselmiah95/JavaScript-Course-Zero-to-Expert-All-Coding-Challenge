@@ -12,5 +12,11 @@ GOOD LUCK 😀
 */
 
 const Mark = {
-  fullName: "",
+  fullName: "Mark Miller",
+  mass: 78,
+  hight: 1.69,
+  calcBMI: function () {
+    this.bmi = this.mass / this.hight ** 2;
+    return this.bmi;
+  },
 };
