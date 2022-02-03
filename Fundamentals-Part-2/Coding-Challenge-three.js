@@ -34,3 +34,5 @@ const John = {
 Mark.calcBMI();
 John.calcBMI();
 console.log(Mark.bmi, John.bmi);
+
+// "John Smith's BMI (28.3) is higher than Mark Miller's (23.9)!"
