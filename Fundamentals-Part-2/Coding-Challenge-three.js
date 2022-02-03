@@ -20,3 +20,6 @@ const Mark = {
     return this.bmi;
   },
 };
+
+Mark.calcBMI();
+console.log(Mark.bmi);
