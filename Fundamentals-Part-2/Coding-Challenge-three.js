@@ -21,5 +21,15 @@ const Mark = {
   },
 };
 
+const John = {
+  fullName: "Mark Miller",
+  mass: 92,
+  hight: 1.95,
+  calcBMI: function () {
+    this.bmi = this.mass / this.hight ** 2;
+    return this.bmi;
+  },
+};
+
 Mark.calcBMI();
-console.log(Mark.bmi);
+console.log(Mark.bmi, John.bmi);
