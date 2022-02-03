@@ -26,3 +26,5 @@ const jonas = {
     }, and he has ${this.hasDriversLicense ? "a" : "no"} driver's license.`;
   },
 };
+
+console.log(jonas.calcAge(1990));
