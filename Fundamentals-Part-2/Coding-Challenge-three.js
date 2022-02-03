@@ -32,4 +32,5 @@ const John = {
 };
 
 Mark.calcBMI();
+John.calcBMI();
 console.log(Mark.bmi, John.bmi);
