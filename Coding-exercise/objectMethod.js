@@ -28,3 +28,6 @@ const jonas = {
 };
 
 console.log(jonas.calcAge(1990));
+console.log(jonas.age);
+console.log(jonas.age);
+console.log(jonas.age);
