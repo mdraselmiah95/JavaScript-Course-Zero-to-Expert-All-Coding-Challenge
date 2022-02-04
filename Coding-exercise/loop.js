@@ -23,6 +23,6 @@ console.log(jonas.length);
 // console.log(jonas[4])
 // jonas[5] does NOT exist
 
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < jonas.length; i++) {
   console.log(jonas[i]);
 }
