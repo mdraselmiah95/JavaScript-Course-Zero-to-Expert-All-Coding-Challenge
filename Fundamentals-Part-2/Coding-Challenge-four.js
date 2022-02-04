@@ -25,3 +25,5 @@ for (let i = 0; i < bills.length; i++) {
   tips.push(tip);
   totals.push(tip + bills[i]);
 }
+
+console.log(bills, tips, totals);
