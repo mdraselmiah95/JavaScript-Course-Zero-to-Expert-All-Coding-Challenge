@@ -7,8 +7,8 @@
 ///////////////////////////////////////
 // Looping Arrays, Breaking and Continuing
 const jonas = [
-  "Jonas",
-  "Schmedtmann",
+  "Rasel",
+  "Mia",
   2037 - 1991,
   "teacher",
   ["Michael", "Peter", "Steven"],
