@@ -20,3 +20,7 @@ const jonas = [
 // ...
 // console.log(jonas[4])
 // jonas[5] does NOT exist
+
+for (let i = 0; i < 5; i++) {
+  console.log(jonas[i]);
+}
