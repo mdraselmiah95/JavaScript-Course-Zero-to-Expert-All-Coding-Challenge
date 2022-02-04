@@ -34,3 +34,6 @@ const types = [];
 // }
 
 // console.log(types);
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
