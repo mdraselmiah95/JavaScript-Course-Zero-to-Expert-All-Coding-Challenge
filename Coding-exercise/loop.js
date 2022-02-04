@@ -15,6 +15,8 @@ const jonas = [
   true,
 ];
 
+console.log(jonas.length);
+
 // console.log(jonas[0])
 // console.log(jonas[1])
 // ...
