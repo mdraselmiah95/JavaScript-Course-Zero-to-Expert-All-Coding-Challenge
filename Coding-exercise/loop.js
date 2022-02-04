@@ -84,6 +84,6 @@
 //   }
 // }
 
-const dice = Math.random() * 6;
+const dice = Math.trunc(Math.random() * 6);
 
 console.log(dice);
