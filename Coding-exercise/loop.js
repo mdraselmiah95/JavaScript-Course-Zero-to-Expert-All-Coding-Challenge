@@ -24,5 +24,5 @@ console.log(jonas.length);
 // jonas[5] does NOT exist
 
 for (let i = 0; i < jonas.length; i++) {
-  console.log(jonas[i]);
+  console.log(jonas[i], typeof jonas[i]);
 }
