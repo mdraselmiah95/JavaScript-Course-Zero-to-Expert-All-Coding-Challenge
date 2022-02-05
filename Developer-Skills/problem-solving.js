@@ -56,7 +56,10 @@ const calcTempAmplitudeNew = function (t1, t2) {
   return max - min;
 };
 
-const newTemperature = ([1, 3, 6, 9, 4, -22], [33, 68, 2, 0, 4, 1, 99]);
+// const newTemperature = ();
 
-const temperature = calcTempAmplitudeNew(newTemperature);
+const temperature = calcTempAmplitudeNew(
+  [1, 3, 6, 9, 4, -22],
+  [33, 68, 2, 4, 1, 99]
+);
 console.log(temperature);
