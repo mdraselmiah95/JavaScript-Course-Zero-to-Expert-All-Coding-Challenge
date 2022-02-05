@@ -29,4 +29,4 @@ const calcTempAmplitude = function (temps) {
   }
   console.log(max, min);
 };
-calcTempAmplitude(2, 77, 8, 2, -8, 3);
+calcTempAmplitude([2, 77, 8, 2, 8, 3, -6]);
