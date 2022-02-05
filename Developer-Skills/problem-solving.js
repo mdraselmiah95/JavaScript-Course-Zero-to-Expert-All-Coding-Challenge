@@ -27,4 +27,6 @@ const calcTempAmplitude = function (temps) {
     if (currentTemp > max) max = currentTemp;
     if (currentTemp < min) min = currentTemp;
   }
+  console.log(max, min);
 };
+calcTempAmplitude(2, 77, 8, 2, -8, 3);
