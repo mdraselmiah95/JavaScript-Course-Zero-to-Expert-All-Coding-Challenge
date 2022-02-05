@@ -6,7 +6,7 @@
 // PROBLEM 1:
 // We work for a company building a smart home thermometer. Our most recent task is this: "Given an array of temperatures of one day, calculate the temperature amplitude. Keep in mind that sometimes there might be a sensor error."
 
-const temperatures = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5, 88];
+// const temperatures = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5, 88];
 
 // 1) Understanding the problem
 // - What is temp amplitude? Answer: difference between highest and lowest temp
@@ -19,7 +19,31 @@ const temperatures = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5, 88];
 // - Find min value in temp array
 // - Subtract min from max (amplitude) and return it
 
-const calcTempAmplitude = function (temps) {
+// const calcTempAmplitude = function (temps) {
+//   let max = temps[0];
+//   let min = temps[0];
+//   for (let i = 0; i < temps.length; i++) {
+//     const currentTemp = temps[i];
+//     if (typeof currentTemp !== "number") continue;
+//     if (currentTemp > max) max = currentTemp;
+//     if (currentTemp < min) min = currentTemp;
+//   }
+//   console.log(max, min);
+//   return max - min;
+// };
+// calcTempAmplitude([2, 77, 8, 2, 8, 3, -6]);
+// const amplitude = calcTempAmplitude(temperatures);
+// console.log(amplitude);
+
+// PROBLEM 2:
+// Function should now receive 2 arrays of temps
+// 1) Understanding the problem
+// - With 2 arrays, should we implement functionality twice? NO! Just merge two arrays
+// 2) Breaking up into sub-problems
+// - Merge 2 arrays
+
+const calcTempAmplitudeNew = function (t1, t2) {
+  const temps = t1.concat(t2);
   let max = temps[0];
   let min = temps[0];
   for (let i = 0; i < temps.length; i++) {
@@ -31,13 +55,8 @@ const calcTempAmplitude = function (temps) {
   console.log(max, min);
   return max - min;
 };
-// calcTempAmplitude([2, 77, 8, 2, 8, 3, -6]);
-const amplitude = calcTempAmplitude(temperatures);
-console.log(amplitude);
 
-// PROBLEM 2:
-// Function should now receive 2 arrays of temps
-// 1) Understanding the problem
-// - With 2 arrays, should we implement functionality twice? NO! Just merge two arrays
-// 2) Breaking up into sub-problems
-// - Merge 2 arrays
+const newTemperature = ([1, 3, 6, 9, 4, -22], [33, 68, 2, 0, 4, 1, 99]);
+
+const temperature = calcTempAmplitudeNew(newTemperature);
+console.log(temperature);
