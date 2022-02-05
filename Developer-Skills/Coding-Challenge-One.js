@@ -19,4 +19,5 @@ TEST DATA 2: [12, 5, -5, 0, 4]
 
 const data1 = [17, 21, 23];
 const data2 = [12, 5, -5, 0, 4];
+
 console.log(`... ${data1[0]}ºC ... ${data1[1]}ºC ... ${data1[2]}ºC ...`);
