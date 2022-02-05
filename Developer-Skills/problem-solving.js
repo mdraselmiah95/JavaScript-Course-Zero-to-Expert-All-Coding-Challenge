@@ -61,3 +61,14 @@ const TemperatureTwo = [12, 1, 2, 3, 34, 7, 8, 9, 7, 4, 78, 941];
 
 const temperature = calcTempAmplitudeNew(TemperatureOne, TemperatureTwo);
 console.log(temperature);
+
+///////////////////////////////////////
+// Debugging with the Console and Breakpoints
+const measureKelvin = function () {
+  const measurement = {
+    type: 'temp',
+    unit: 'celsius',
+    // C) FIX
+    // value: Number(prompt('Degrees celsius:')),
+    value: 10,
+  };
