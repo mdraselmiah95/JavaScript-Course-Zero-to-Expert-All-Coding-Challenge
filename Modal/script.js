@@ -17,5 +17,9 @@ for (let i = 0; i < btnOpenModel.length; i++) {
   btnOpenModel[i].addEventListener("click", openModel);
 
   btnCloseModal.addEventListener("click", closeModel);
-  overlay.addEventListener("click", closeModel);
+    overlay.addEventListener("click", closeModel);
+    
+    document.addEventListener("keydown", function (e)){
+        console.log(e.key)
+    }
 }
