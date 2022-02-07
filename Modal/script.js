@@ -20,6 +20,9 @@ for (let i = 0; i < btnOpenModel.length; i++) {
   overlay.addEventListener("click", closeModel);
 
   document.addEventListener("keydown", function (e) {
-    console.log(e.key);
+    // console.log(e.key);
+    if (e.key === "Escape" && !model.classList.contains("hidden")) {
+      closeModel();
+    }
   });
 }
