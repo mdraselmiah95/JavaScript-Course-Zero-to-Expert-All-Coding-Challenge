@@ -13,6 +13,8 @@ const btnNew = document.querySelector(".btn--new");
 const btnRoll = document.querySelector(".btn--roll");
 const btnHold = document.querySelector(".btn--hold");
 
+let scores, currentScore, activePlayer, playing;
+
 // console.log(
 //   player0El,
 //   player1El,
@@ -47,6 +49,7 @@ btnRoll.addEventListener("click", function () {
   if (dice !== 1) {
     // Add dice to current score
     currentScore += dice;
+    current0El.textContent = currentScore; //change later
   } else {
     // Switch to next player
   }
