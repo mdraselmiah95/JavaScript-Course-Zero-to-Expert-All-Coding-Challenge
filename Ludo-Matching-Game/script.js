@@ -13,14 +13,14 @@ const btnNew = document.querySelector(".btn--new");
 const btnRoll = document.querySelector(".btn--roll");
 const btnHold = document.querySelector(".btn--hold");
 
-console.log(
-  player0El,
-  player1El,
-  score0El,
-  score1El,
-  current0El,
-  current1El,
-  diceEl,
-  btnNew,
-  btnRoll.btnHold
-);
+// console.log(
+//   player0El,
+//   player1El,
+//   score0El,
+//   score1El,
+//   current0El,
+//   current1El,
+//   diceEl,
+//   btnNew,
+//   btnRoll.btnHold
+// );
