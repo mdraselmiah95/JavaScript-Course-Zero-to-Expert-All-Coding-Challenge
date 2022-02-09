@@ -14,7 +14,6 @@ const btnRoll = document.querySelector(".btn--roll");
 const btnHold = document.querySelector(".btn--hold");
 
 let scores, currentScore, activePlayer, playing;
-
 // console.log(
 //   player0El,
 //   player1El,
