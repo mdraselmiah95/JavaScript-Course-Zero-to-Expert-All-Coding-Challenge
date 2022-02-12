@@ -74,6 +74,18 @@ const restaurant = {
 // const { name, openingHours, categories } = restaurant;
 // console.log(name, openingHours, categories);
 
+// Receive 2 return values from a function
+const [starter, mainCourse] = restaurant.order(2, 0);
+console.log(starter, mainCourse);
+// Nested destructuring
+const nested = [2, 4, [5, 6]];
+// const [i, , j] = nested;
+const [i, , [j, k]] = nested;
+console.log(i, j, k);
+// Default values
+const [p = 1, q = 1, r = 1] = [8, 9];
+console.log(p, q, r);
+
 const {
   name: restaurantName,
   openingHours: hours,
