@@ -98,3 +98,6 @@ const {
 } = restaurant;
 console.log(restaurantName, hours, tags);
 */
+
+const { menu = [], starterMenu: starter = [] } = restaurant;
+console.log(menu, starter);
