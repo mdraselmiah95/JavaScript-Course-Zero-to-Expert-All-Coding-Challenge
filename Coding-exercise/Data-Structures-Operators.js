@@ -70,3 +70,6 @@ const restaurant = {
 // console.log(main, secondary);
 // [main, secondary] = [secondary, main];
 // console.log(main, secondary);
+
+const { name, openingHours, categories } = restaurant;
+console.log(name, openingHours, categories);
