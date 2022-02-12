@@ -56,6 +56,7 @@ const restaurant = {
 
 ///////////////////////////////////////
 // The Spread Operator (...)
+
 const arr = [7, 8, 9];
 const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
 console.log(badNewArr);
@@ -65,17 +66,21 @@ console.log(...newArr);
 console.log(1, 2, 7, 8, 9);
 const newMenu = [...restaurant.mainMenu, 'Gnocchi'];
 console.log(newMenu);
+
 // Copy array
 const mainMenuCopy = [...restaurant.mainMenu];
+
 // Join 2 arrays
 const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
 console.log(menu);
+
 // Iterables: arrays, strings, maps, sets. NOT objects
 const str = 'Jonas';
 const letters = [...str, ' ', 'S.'];
 console.log(letters);
 console.log(...str);
 // console.log(`${...str} Schmedtmann`);
+
 // Real-world example
 const ingredients = [
   // prompt("Let's make pasta! Ingredient 1?"),
@@ -85,6 +90,7 @@ const ingredients = [
 console.log(ingredients);
 restaurant.orderPasta(ingredients[0], ingredients[1], ingredients[2]);
 restaurant.orderPasta(...ingredients);
+
 // Objects
 const newRestaurant = { foundedIn: 1998, ...restaurant, founder: 'Giuseppe' };
 console.log(newRestaurant);
