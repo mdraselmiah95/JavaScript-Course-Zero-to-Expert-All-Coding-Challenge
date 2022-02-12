@@ -19,10 +19,10 @@ const openingHours = {
 // console.log(weekdays, openingHours);
 
 const restaurant = {
-  name: "Classico Italiano",
-  location: "Via Angelo Tavanti 23, Firenze, Italy",
+  name: "Classics Italiane",
+  location: "Via Angelo Taranto 23, Firenze, Italy",
   categories: ["Italian", "Pizzeria", "Vegetarian", "Organic"],
-  starterMenu: ["Focaccia", "Bruschetta", "Garlic Bread", "Caprese Salad"],
+  starterMenu: ["Focaccia", "Brochette", "Garlic Bread", "Capers Salad"],
   mainMenu: ["Pizza", "Pasta", "Risotto"],
 
   // ES6 enhanced object literals
@@ -40,7 +40,7 @@ const restaurant = {
 
   orderPasta(ing1, ing2, ing3) {
     console.log(
-      `Here is your declicious pasta with ${ing1}, ${ing2} and ${ing3}`
+      `Here is your delicious pasta with ${ing1}, ${ing2} and ${ing3}`
     );
   },
 
@@ -49,3 +49,24 @@ const restaurant = {
     console.log(otherIngredients);
   },
 };
+
+// console.log(restaurant);
+
+///////////////////////////////////////
+// Destructuring Arrays
+// const arr = [2, 3, 4];
+// const a = arr[0];
+// const b = arr[1];
+// const c = arr[2];
+// const [x, y, z] = arr;
+// console.log(x, y, z);
+// console.log(arr);
+// let [main, , secondary] = restaurant.categories;
+// console.log(main, secondary);
+// Switching variables
+// const temp = main;
+// main = secondary;
+// secondary = temp;
+// console.log(main, secondary);
+// [main, secondary] = [secondary, main];
+// console.log(main, secondary);
