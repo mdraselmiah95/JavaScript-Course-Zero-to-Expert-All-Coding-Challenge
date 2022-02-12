@@ -15,3 +15,5 @@ const openingHours = {
     close: 24,
   },
 };
+
+console.log(weekdays, openingHours);
