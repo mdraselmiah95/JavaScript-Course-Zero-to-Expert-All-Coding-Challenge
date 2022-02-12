@@ -52,6 +52,18 @@ const restaurant = {
 
 // console.log(restaurant);
 
+///////////////////////////////////////
+// Rest Pattern and Parameters
+
+const [a, b, ...other] = [1, 2, 3, 4, 5, 6, 7, 8];
+console.log(a, b, other);
+
+const [pizza, egg, ...otherFood] = [
+  ...restaurant.mainMenu,
+  ...restaurant.starterMenu,
+];
+console.log(pizza, egg, otherFood);
+
 /*
 
 ///////////////////////////////////////
