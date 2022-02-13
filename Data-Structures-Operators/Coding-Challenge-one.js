@@ -86,3 +86,10 @@ const {
   odds: { team1, x: draw, team2 },
 } = game;
 console.log(team1, draw, team2);
+
+//6.
+const printGoals = function (...players) {
+  console.log(`${players.length} goals were scored`);
+};
+printGoals("Davies", "Muller", "Landowska", "Gimmick");
+printGoals("Davies", "Muller");
