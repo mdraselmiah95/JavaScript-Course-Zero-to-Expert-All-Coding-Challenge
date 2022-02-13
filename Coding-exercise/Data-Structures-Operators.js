@@ -52,6 +52,8 @@ const restaurant = {
 
 // console.log(restaurant);
 
+console.log(11);
+
 ///////////////////////////////////////
 // Rest Pattern and Parameters
 
