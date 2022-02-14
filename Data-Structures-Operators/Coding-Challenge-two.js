@@ -79,3 +79,8 @@ for (const [team, odd] of Object.entries(game.odds)) {
 }
 
 //Create an object called 'scorers' which contains the names of the players who scored as properties, and the number of goals as the value.
+const scorers = {};
+for (const player of game.scored) {
+  scorers[player] ? scorers[player]++ : (scorers[player] = 1);
+}
+console.log(scorers);
