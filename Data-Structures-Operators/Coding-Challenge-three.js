@@ -35,3 +35,8 @@ console.log(events);
 
 //2.
 gameEvents.delete(64);
+
+//3.
+console.log(
+  `An event happened, on average, every ${90 / gameEvents.size} minutes`
+);
