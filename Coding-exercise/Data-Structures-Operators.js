@@ -51,6 +51,7 @@ const restaurant = {
 };
 /*******************************************************************/
 
+/*
 ///////////////////////////////////////
 // Sets
 const ordersSet = new Set([
@@ -82,6 +83,8 @@ console.log(
 );
 
 console.log(new Set("jonasschmedtmann").size);
+
+*/
 
 /*
 
