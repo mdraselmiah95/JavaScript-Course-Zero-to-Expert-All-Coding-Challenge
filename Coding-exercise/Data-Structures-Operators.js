@@ -51,6 +51,7 @@ const restaurant = {
 };
 /*******************************************************************/
 
+/*
 ///////////////////////////////////////
 // Working With Strings - Part 2
 // Split and join
@@ -91,6 +92,7 @@ const planesInLine = function (n) {
 planesInLine(5);
 planesInLine(3);
 planesInLine(12);
+*/
 
 /*
 ///////////////////////////////////////
