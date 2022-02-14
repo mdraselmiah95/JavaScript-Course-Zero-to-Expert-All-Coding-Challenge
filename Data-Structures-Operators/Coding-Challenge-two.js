@@ -60,3 +60,6 @@ const game = {
 };
 
 //1.
+for (const [i, player] of game.scored.entries()) {
+  console.log(`Goal ${i + 1}: ${player}`);
+}
