@@ -79,6 +79,7 @@ const capitalizeName = function (name) {
 };
 capitalizeName("jessica ann smith davis");
 capitalizeName("jonas schmedtmann");
+
 // Padding
 const message = "Go to gate 23!";
 console.log(message.padStart(20, "+").padEnd(30, "+"));
@@ -88,15 +89,18 @@ const maskCreditCard = function (number) {
   const last = str.slice(-4);
   return last.padStart(str.length, "*");
 };
+
 console.log(maskCreditCard(64637836));
 console.log(maskCreditCard(43378463864647384));
 console.log(maskCreditCard("334859493847755774747"));
+
 // Repeat
 const message2 = "Bad weather... All Departures Delayed... ";
 console.log(message2.repeat(5));
 const planesInLine = function (n) {
   console.log(`There are ${n} planes in line ${"🛩".repeat(n)}`);
 };
+
 planesInLine(5);
 planesInLine(3);
 planesInLine(12);
