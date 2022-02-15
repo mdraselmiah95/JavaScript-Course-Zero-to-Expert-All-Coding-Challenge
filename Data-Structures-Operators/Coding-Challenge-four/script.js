@@ -40,7 +40,7 @@ document.querySelector("button").addEventListener("click", function () {
   const rows = text.split("\n");
   //   console.log(rows);
 
-  for (const [i, row] of rows) {
+  for (const [i, row] of rows.entries()) {
     const [first, second] = row.toLocaleLowerCase().trim().split("_");
     const output = `${first}${second.replace(
       second[0],
