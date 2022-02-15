@@ -53,7 +53,7 @@ const restaurant = {
 
 console.log("a+very+nice+string".split("+"));
 console.log("Jonas Schmedtmann".split(" "));
-
+const [firstName, lastName] = "Jonas Schmedtmann".split(" ");
 const newName = ["Mr.", firstName, lastName.toUpperCase()].join(" ");
 console.log(newName);
 
