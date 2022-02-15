@@ -65,7 +65,7 @@ const flights =
 // console.log(flights);
 
 for (const flight of flights.split("+")) {
-  console.log(flight);
+  console.log(flight.split(";"));
 }
 
 // const maskCreditCard = function (number) {
