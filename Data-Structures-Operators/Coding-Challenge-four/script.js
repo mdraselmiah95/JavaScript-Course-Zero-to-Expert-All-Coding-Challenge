@@ -29,4 +29,5 @@ Afterwards, test with your own test data!
 GOOD LUCK 😀
 */
 
-console.log(11);
+document.body.append(document.createElement("textarea"));
+document.body.append(document.createElement("button"));
