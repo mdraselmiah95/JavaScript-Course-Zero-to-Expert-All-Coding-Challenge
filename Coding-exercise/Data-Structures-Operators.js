@@ -65,7 +65,9 @@ const flights =
 // console.log(flights);
 
 for (const flight of flights.split("+")) {
-  console.log(flight.split(";"));
+  const [type, from, to, time] = flight.split(";");
+  const output = `${type}${from}${to} (${time})`;
+  console.log(output);
 }
 
 // const maskCreditCard = function (number) {
