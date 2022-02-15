@@ -5,11 +5,13 @@
 Write a program that receives a list of variable names written in underscore_case and convert them to camelCase.
 The input will come from a textarea inserted into the DOM (see code below), and conversion will happen when the button is pressed.
 THIS TEST DATA (pasted to textarea)
+
 underscore_case
  first_name
 Some_Variable 
   calculate_AGE
 delayed_departure
+
 SHOULD PRODUCE THIS OUTPUT (5 separate console.log outputs)
 underscoreCase      ✅
 firstName           ✅✅
@@ -37,4 +39,23 @@ document.querySelector("button").addEventListener("click", function () {
   //   console.log(text);
   const rows = text.split("\n");
   console.log(rows);
+
+  for (const row in rows) {
+    const [first, second] = row.toLocaleLowerCase().trim().split("_");
+    const output = `${first}${second.replace(
+      second[0],
+      second[0].toLocaleUpperCase
+    )}`;
+    console.log(output);
+  }
 });
+
+/*
+
+underscore_case
+ first_name
+Some_Variable 
+  calculate_AGE
+delayed_departure
+
+*/
