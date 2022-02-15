@@ -57,6 +57,10 @@ const [firstName, lastName] = "Jonas Schmedtmann".split(" ");
 const newName = ["Mr.", firstName, lastName.toUpperCase()].join(" ");
 console.log(newName);
 
+const message = "Go to gate 23!";
+console.log(message.padStart(20, "+").padEnd(30, "+"));
+console.log("Jonas".padStart(20, "+").padEnd(30, "+"));
+
 /*
 ///////////////////////////////////////
 // Working With Strings - Part 2
