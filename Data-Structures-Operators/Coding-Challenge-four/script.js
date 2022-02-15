@@ -11,7 +11,6 @@ Some_Variable
   calculate_AGE
 delayed_departure
 SHOULD PRODUCE THIS OUTPUT (5 separate console.log outputs)
-
 underscoreCase      ✅
 firstName           ✅✅
 someVariable        ✅✅✅
@@ -25,6 +24,9 @@ HINT 2: The solution only needs to work for a variable made out of 2 words, like
 HINT 3: Start without worrying about the ✅. Tackle that only after you have the variable name conversion working 😉
 
 HINT 4: This challenge is difficult on purpose, so start watching the solution in case you're stuck. Then pause and continue!
+
 Afterwards, test with your own test data!
 GOOD LUCK 😀
 */
+
+console.log(11);
