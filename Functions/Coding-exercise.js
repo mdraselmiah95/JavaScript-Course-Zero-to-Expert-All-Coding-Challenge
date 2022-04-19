@@ -46,6 +46,7 @@ const checkIn = function (flightNum, passenger) {
 // console.log(flight);
 // console.log(jonas);
 
+//** Higher order Function and callback Function
 // Functions Accepting Callback Functions
 
 const oneWord = function (str) {
