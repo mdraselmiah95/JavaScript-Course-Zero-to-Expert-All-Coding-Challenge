@@ -86,7 +86,7 @@ const greeterHey = greet("Hey");
 // Challenge
 
 const greetArr = (greeting) => (name) => console.log(`${greeting} ${name}`);
-greetArr("Hi")("Jonas");
+// greetArr("Hi")("Jonas");
 
 // The call and apply Methods
 const lufthansa = {
@@ -102,9 +102,9 @@ const lufthansa = {
   },
 };
 
-lufthansa.book(289, "Rasel mia");
-lufthansa.book(435, "Shakib");
-console.log(lufthansa);
+// lufthansa.book(289, "Rasel mia");
+// lufthansa.book(435, "Shakib");
+// console.log(lufthansa);
 
 const eurowings = {
   airline: "Eurowings",
@@ -115,16 +115,38 @@ const book = lufthansa.book;
 // Does NOT work
 // book(23, 'Sarah Williams');
 // Call method
-book.call(eurowings, 23, "Sarah Williams");
-console.log(eurowings);
+// book.call(eurowings, 23, "Sarah Williams");
+// console.log(eurowings);
 
-book.call(lufthansa, 239, "Mary Cooper");
-console.log(lufthansa);
+// book.call(lufthansa, 239, "Mary Cooper");
+// console.log(lufthansa);
 
 const swiss = {
   airline: "Swiss Air Lines",
   iataCode: "LX",
   bookings: [],
 };
-book.call(swiss, 583, "Mary Cooper");
+// book.call(swiss, 583, "Mary Cooper");
+// console.log(swiss);
+
+// Apply method
+const flightData = [583, "George Cooper"];
+book.apply(swiss, flightData);
 console.log(swiss);
+book.call(swiss, ...flightData);
+
+// The bind Method
+
+// book.call(eurowings, 23, "Sarah Williams");
+
+const bookEW = book.bind(eurowings);
+const bookLH = book.bind(lufthansa);
+const bookLX = book.bind(swiss);
+
+bookEW(23, "Steven Williams");
+
+const bookEW23 = book.bind(eurowings, 23);
+bookEW23("Jonas Schmo");
+bookEW23("Martha Cooper");
+
+//With Event Listener
