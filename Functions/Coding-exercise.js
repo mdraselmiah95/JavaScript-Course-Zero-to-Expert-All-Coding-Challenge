@@ -62,15 +62,15 @@ const transformer = function (str, fn) {
   console.log(`Transformed string: ${fn(str)}`);
   console.log(`Transformed by: ${fn.name}`);
 };
-transformer("JavaScript is the best!", upperFirstWord);
-transformer("JavaScript is the best!", oneWord);
+// transformer("JavaScript is the best!", upperFirstWord);
+// transformer("JavaScript is the best!", oneWord);
 
 // JS uses callbacks all the time
 const high5 = function () {
   console.log("👋");
 };
 // document.body.addEventListener("click", high5);
-["Jonas", "Martha", "Adam"].forEach(high5);
+// ["Jonas", "Martha", "Adam"].forEach(high5);
 
 // Functions Returning Functions
 const greet = function (greeting) {
@@ -87,3 +87,19 @@ const greeterHey = greet("Hey");
 
 const greetArr = (greeting) => (name) => console.log(`${greeting} ${name}`);
 greetArr("Hi")("Jonas");
+
+// The call and apply Methods
+const lufthansa = {
+  airline: "Lufthansa",
+  iataCode: "LH",
+  booking: [],
+  //book: function() {}
+  book(flightNum, name) {
+    console.log(
+      `${name} booking a seat on ${this.airline} flight ${this.iataCode} ${flightNum}`
+    );
+  },
+};
+
+lufthansa.book(289, "Rasel mia");
+lufthansa.book(435, "Shakib");
