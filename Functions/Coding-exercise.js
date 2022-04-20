@@ -120,3 +120,11 @@ console.log(eurowings);
 
 book.call(lufthansa, 239, "Mary Cooper");
 console.log(lufthansa);
+
+const swiss = {
+  airline: "Swiss Air Lines",
+  iataCode: "LX",
+  bookings: [],
+};
+book.call(swiss, 583, "Mary Cooper");
+console.log(swiss);
