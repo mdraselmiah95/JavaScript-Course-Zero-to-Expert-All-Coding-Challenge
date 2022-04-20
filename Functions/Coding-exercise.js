@@ -92,16 +92,31 @@ greetArr("Hi")("Jonas");
 const lufthansa = {
   airline: "Lufthansa",
   iataCode: "LH",
-  booking: [],
-  //book: function() {}
+  bookings: [],
+  // book: function() {}
   book(flightNum, name) {
     console.log(
-      `${name} booking a seat on ${this.airline} flight ${this.iataCode} ${flightNum}`
+      `${name} booked a seat on ${this.airline} flight ${this.iataCode}${flightNum}`
     );
-    this.booking.push({ flight: `${this.iataCode}${flightNum}`, name });
+    this.bookings.push({ flight: `${this.iataCode}${flightNum}`, name });
   },
 };
 
 lufthansa.book(289, "Rasel mia");
 lufthansa.book(435, "Shakib");
+console.log(lufthansa);
+
+const eurowings = {
+  airline: "Eurowings",
+  iataCode: "EW",
+  bookings: [],
+};
+const book = lufthansa.book;
+// Does NOT work
+// book(23, 'Sarah Williams');
+// Call method
+book.call(eurowings, 23, "Sarah Williams");
+console.log(eurowings);
+
+book.call(lufthansa, 239, "Mary Cooper");
 console.log(lufthansa);
