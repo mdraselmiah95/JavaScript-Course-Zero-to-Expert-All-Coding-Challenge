@@ -209,3 +209,13 @@ booker();
 booker();
 booker();
 console.dir(booker);
+
+// More Closure Examples
+// Example 1
+let f;
+const g = function () {
+  const a = 23;
+  f = function () {
+    console.log(a * 2);
+  };
+};
