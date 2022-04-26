@@ -71,6 +71,8 @@ And now explain to YOURSELF (or someone around you) WHY this worked! Take all th
 GOOD LUCK 😀
 */
 
+//solution
+
 (function () {
   const header = document.querySelector("h1");
   header.style.color = "red";
