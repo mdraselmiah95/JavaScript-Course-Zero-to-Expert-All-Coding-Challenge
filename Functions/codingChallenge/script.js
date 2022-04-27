@@ -84,3 +84,5 @@ const displayMovements = function (movements, sort = false) {
     containerMovements.insertAdjacentHTML("afterbegin", html);
   });
 };
+
+displayMovements(account1.movements);
