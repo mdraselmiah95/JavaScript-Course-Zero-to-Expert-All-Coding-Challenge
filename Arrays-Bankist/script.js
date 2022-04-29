@@ -7,7 +7,7 @@
 /////////////////////////////////////////////////
 // Data
 const account1 = {
-  owner: "Rasel mia",
+  owner: "Jonas Schmedtmann",
   movements: [200, 450, -400, 3000, -650, -130, 70, 1300],
   interestRate: 1.2, // %
   pin: 1111,
@@ -36,6 +36,7 @@ const account4 = {
 
 const accounts = [account1, account2, account3, account4];
 
+/////////////////////////////////////////////////
 // Elements
 const labelWelcome = document.querySelector(".welcome");
 const labelDate = document.querySelector(".date");
@@ -62,6 +63,7 @@ const inputLoanAmount = document.querySelector(".form__input--loan-amount");
 const inputCloseUsername = document.querySelector(".form__input--user");
 const inputClosePin = document.querySelector(".form__input--pin");
 
+/////////////////////////////////////////////////
 // Functions
 
 const displayMovements = function (movements, sort = false) {
