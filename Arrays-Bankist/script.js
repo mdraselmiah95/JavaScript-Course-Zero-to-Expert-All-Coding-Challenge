@@ -85,19 +85,6 @@ const displayMovements = function (movements, sort = false) {
   });
 };
 
-displayMovements(account1.movements);
-
-const createUsernames = function (accs) {
-  accs.forEach(function (acc) {
-    acc.username = acc.owner
-      .toLowerCase()
-      .split(" ")
-      .map((name) => name[0])
-      .join("");
-  });
-};
-createUsernames(accounts);
-
 const calcDisplayBalance = function (acc) {
   acc.balance = acc.movements.reduce((acc, mov) => acc + mov, 0);
   labelBalance.textContent = `${acc.balance}€`;
