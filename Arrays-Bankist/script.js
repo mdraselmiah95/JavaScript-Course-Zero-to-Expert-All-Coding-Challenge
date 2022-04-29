@@ -96,7 +96,12 @@ const createUsernames = function (accs) {
       .join("");
   });
 };
-console.log(createUsernames(accounts));
+createUsernames(accounts);
+
+const calcDisplayBalance = function (acc) {
+  acc.balance = acc.movements.reduce((acc, mov) => acc + mov, 0);
+  labelBalance.textContent = `${acc.balance}€`;
+};
 
 // Coding Challenge #1
 
