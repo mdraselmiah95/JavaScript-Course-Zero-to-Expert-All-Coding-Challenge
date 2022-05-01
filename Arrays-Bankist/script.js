@@ -602,3 +602,14 @@ console.log(
     dogSarah.curFood > dogSarah.recFood ? "much" : "little"
   } `
 );
+
+// 3.
+const ownersEatTooMuch = dogs
+  .filter((dog) => dog.curFood > dog.recFood)
+  .flatMap((dog) => dog.owners);
+// .flat();
+console.log(ownersEatTooMuch);
+const ownersEatTooLittle = dogs
+  .filter((dog) => dog.curFood < dog.recFood)
+  .flatMap((dog) => dog.owners);
+console.log(ownersEatTooLittle);
