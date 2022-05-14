@@ -1,5 +1,5 @@
 "use strict";
-
+//for strict mode
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
 const btnCloseModal = document.querySelector(".btn--close-modal");
@@ -36,6 +36,7 @@ document.addEventListener("keydown", function (e) {
 });
 
 // Button scrolling
+
 btnScrollTo.addEventListener("click", function (e) {
   const s1coords = section1.getBoundingClientRect();
   console.log(s1coords);
