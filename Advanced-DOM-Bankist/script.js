@@ -272,6 +272,7 @@ const slider = function () {
     if (e.key === "ArrowLeft") prevSlide();
     e.key === "ArrowRight" && nextSlide();
   });
+
   dotContainer.addEventListener("click", function (e) {
     if (e.target.classList.contains("dots__dot")) {
       const { slide } = e.target.dataset;
