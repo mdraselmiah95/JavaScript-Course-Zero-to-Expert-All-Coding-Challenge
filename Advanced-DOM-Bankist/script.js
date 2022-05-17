@@ -282,3 +282,9 @@ const slider = function () {
   });
 };
 slider();
+
+// Selecting, Creating, and Deleting Elements
+// Selecting elements
+console.log(document.documentElement);
+console.log(document.head);
+console.log(document.body);
