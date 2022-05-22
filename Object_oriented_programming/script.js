@@ -152,3 +152,7 @@ const account = {
     this.movements.push(mov);
   },
 };
+
+console.log(account.latest);
+account.latest = 50;
+console.log(account.movements);
