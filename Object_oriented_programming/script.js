@@ -122,3 +122,8 @@ class PersonCl {
     console.log(this);
   }
 }
+
+const jessica = new PersonCl("Jessica Davis", 1996);
+console.log(jessica);
+jessica.calcAge();
+console.log(jessica.age);
