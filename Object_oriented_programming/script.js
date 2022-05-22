@@ -87,3 +87,25 @@ bmw.brake();
 bmw.accelerate();
 
 // ES6 Classes
+
+// Class expression
+// const PersonCl = class {}
+// Class declaration
+// Class declaration
+class PersonCl {
+  constructor(fullName, birthYear) {
+    this.fullName = fullName;
+    this.birthYear = birthYear;
+  }
+  // Instance methods
+  // Methods will be added to .prototype property
+  calcAge() {
+    console.log(2037 - this.birthYear);
+  }
+  greet() {
+    console.log(`Hey ${this.fullName}`);
+  }
+  get age() {
+    return 2037 - this.birthYear;
+  }
+}
