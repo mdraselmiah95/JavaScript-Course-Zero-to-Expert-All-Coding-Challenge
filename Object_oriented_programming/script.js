@@ -218,3 +218,5 @@ ford.accelerate();
 ford.brake();
 ford.speedUS = 50;
 console.log(ford);
+
+// Inheritance Between "Classes": Constructor Functions
