@@ -133,3 +133,9 @@ console.log(jessica.__proto__ === PersonCl.prototype);
 //   console.log(`Hey ${this.firstName}`);
 // };
 jessica.greet();
+
+// 1. Classes are NOT hoisted
+// 2. Classes are first-class citizens
+// 3. Classes are executed in strict mode
+const walter = new PersonCl("Walter White", 1965);
+// PersonCl.hey();
