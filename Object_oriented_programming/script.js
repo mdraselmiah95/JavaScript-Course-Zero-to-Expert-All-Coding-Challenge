@@ -332,3 +332,9 @@ jay.calcAge();
 
 // Encapsulation: Protected Properties and Methods
 // Encapsulation: Private Class Fields and Methods
+
+// 1) Public fields
+// 2) Private fields
+// 3) Public methods
+// 4) Private methods
+// (there is also the static version)
