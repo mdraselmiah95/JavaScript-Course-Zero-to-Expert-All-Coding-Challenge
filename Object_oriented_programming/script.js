@@ -356,4 +356,15 @@ class Account {
   }
   // 3) Public methods
   // Public interface
+  getMovements() {
+    return this.#movements;
+  }
+  deposit(val) {
+    this.#movements.push(val);
+    return this;
+  }
+  withdraw(val) {
+    this.deposit(-val);
+    return this;
+  }
 }
