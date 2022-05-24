@@ -367,4 +367,12 @@ class Account {
     this.deposit(-val);
     return this;
   }
+  requestLoan(val) {
+    // if (this.#approveLoan(val)) {
+    if (this._approveLoan(val)) {
+      this.deposit(val);
+      console.log(`Loan approved`);
+      return this;
+    }
+  }
 }
