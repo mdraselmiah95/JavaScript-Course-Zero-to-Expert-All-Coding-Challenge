@@ -375,4 +375,12 @@ class Account {
       return this;
     }
   }
+  static helper() {
+    console.log("Helper");
+  }
+  // 4) Private methods
+  // #approveLoan(val) {
+  _approveLoan(val) {
+    return true;
+  }
 }
