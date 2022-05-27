@@ -4,6 +4,21 @@
 // const cycling1 = new Cycling([39, -12], 27, 95, 523);
 // console.log(run1, cycling1);
 
+const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
 ///////////////////////////////////////
 // APPLICATION ARCHITECTURE
 const form = document.querySelector(".form");
