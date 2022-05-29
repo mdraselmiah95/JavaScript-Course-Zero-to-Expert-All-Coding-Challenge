@@ -1,5 +1,19 @@
 "use strict";
 
+class Workout {
+  date = new Date();
+  id = (Date.now() + "").slice(-10);
+  clicks = 0;
+
+  constructor(coords, distance, duration) {
+    // this.date = ...
+    // this.id = ...
+    this.coords = coords; // [lat, lng]
+    this.distance = distance; // in km
+    this.duration = duration; // in min
+  }
+}
+
 // const run1 = new Running([39, -12], 5.2, 24, 178);
 // const cycling1 = new Cycling([39, -12], 27, 95, 523);
 // console.log(run1, cycling1);
