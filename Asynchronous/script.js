@@ -37,6 +37,8 @@ const getJSON = function (url, errorMsg = "Something went wrong") {
 
 // Our First AJAX Call: XMLHttpRequest
 
+/*
+
 const getCountryData = function (country) {
   const request = new XMLHttpRequest();
   request.open("GET", `https://restcountries.eu/rest/v2/name/${country}`);
@@ -66,6 +68,8 @@ const getCountryData = function (country) {
 getCountryData("portugal");
 getCountryData("usa");
 getCountryData("germany");
+
+*/
 
 // Welcome to Callback Hell
 
@@ -97,6 +101,9 @@ const getCountryAndNeighbor = function (country) {
 */
 
 // getCountryAndNeighbor('portugal');
+
+/*
+
 getCountryAndNeighbor("usa");
 setTimeout(() => {
   console.log("1 second passed");
@@ -110,6 +117,8 @@ setTimeout(() => {
     }, 1000);
   }, 1000);
 }, 1000);
+
+*/
 
 // Consuming Promises
 // Chaining Promises
@@ -159,6 +168,7 @@ setTimeout(() => {
 //     });
 // };
 
+/*
 const getCountryData = function (country) {
   // Country 1
   getJSON(
@@ -188,3 +198,4 @@ btn.addEventListener("click", function () {
   getCountryData("portugal");
 });
 // getCountryData('australia');
+*/
