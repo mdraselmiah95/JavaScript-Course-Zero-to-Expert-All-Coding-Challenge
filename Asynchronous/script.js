@@ -200,7 +200,6 @@ btn.addEventListener("click", function () {
 // getCountryData('australia');
 */
 
-///////////////////////////////////////
 // The Event Loop in Practice
 console.log("Test start");
 setTimeout(() => console.log("0 sec timer"), 0);
