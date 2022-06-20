@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "leaflet": "^1.8.0"
+    "leaflet": "^1.8.0",
+    "lodash-es": "^4.17.21"
   }
 }
