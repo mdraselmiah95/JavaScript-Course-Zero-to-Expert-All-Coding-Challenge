@@ -1,3 +1,4 @@
+//String
 var a = "abc";
 var b = "bcd";
 console.log(a === b);
@@ -38,3 +39,6 @@ for (var i = 0; i < arr.length; i++) {
     console.log(arr[i]);
   }
 }
+
+var arr2 = Array(1, 3, 5, 6, 7, 8, 9, 0, 0, 0, 44, 66);
+console.log(arr2);
