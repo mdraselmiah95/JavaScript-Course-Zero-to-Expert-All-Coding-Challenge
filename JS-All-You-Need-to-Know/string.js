@@ -12,7 +12,7 @@ const str = "This is the most important 'TOPIC' in JavaScript.";
 
 //Traverse an Array
 
-var arr = [1, 3, 4, 5, 6, 8, 9, 20, 36, 88];
+var arr = [1, 3, 4, 5, 6, 8, 9, 20, 36, 90];
 console.log(arr.length - 1);
 
 for (var i = 0; i < arr.length; i++) {
@@ -20,3 +20,9 @@ for (var i = 0; i < arr.length; i++) {
   arr[i] = arr[i] + 2;
 }
 console.log(arr);
+
+var sum = 0;
+for (var i = 0; i < arr.length; i++) {
+  sum += arr[i];
+}
+console.log(sum);
