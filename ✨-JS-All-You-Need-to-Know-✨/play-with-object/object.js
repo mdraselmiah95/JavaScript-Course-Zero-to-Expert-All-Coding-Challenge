@@ -48,4 +48,9 @@ var points = {
 // console.log(points["z"]);
 
 points.x = 50;
+points.a = 40;
+console.log(points);
+
+var prop = "z";
+points[prop] = 55;
 console.log(points);
