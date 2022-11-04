@@ -43,6 +43,9 @@ var points = {
 
 // console.log(points.x);
 // console.log(points.y);
-console.log(points.x + points.y);
+// console.log(points.x + points.y);
 
-console.log(points["z"]);
+// console.log(points["z"]);
+
+points.x = 50;
+console.log(points);
