@@ -49,6 +49,7 @@ var points = {
 
 points.x = 50;
 points.a = 40;
+points.n = 70;
 console.log(points);
 
 var prop = "z";
