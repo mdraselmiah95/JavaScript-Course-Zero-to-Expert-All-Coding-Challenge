@@ -14,3 +14,10 @@ const newArr = arr.concat(arr2); //concat method
 
 const isArr = Array.isArray();
 // console.log(isArr);
+
+var a = [1, 2];
+// var b = a;
+var b = Array.from(a);
+b[0] = 3;
+console.log(a);
+console.log(b);
