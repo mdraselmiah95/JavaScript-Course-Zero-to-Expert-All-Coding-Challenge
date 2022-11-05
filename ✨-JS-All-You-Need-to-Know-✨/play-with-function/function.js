@@ -13,5 +13,14 @@ function sub() {
   var b = 20;
   console.log(a - b);
 }
-sub();
-sum();
+// sub();
+// sum();
+
+function total(a = 0, b = 0) {
+  var num1 = a;
+  var num2 = b;
+  var total = num1 * num2;
+  console.log(total);
+}
+
+total(100, 22);
