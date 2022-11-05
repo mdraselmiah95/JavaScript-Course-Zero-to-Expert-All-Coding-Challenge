@@ -1,4 +1,4 @@
-// Object Method
+// Object Method 🧠
 
 var obj = {
   x: 30,
