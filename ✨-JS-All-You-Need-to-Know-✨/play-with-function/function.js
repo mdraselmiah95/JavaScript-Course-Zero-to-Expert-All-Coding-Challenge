@@ -20,7 +20,9 @@ function total(a = 0, b = 0) {
   var num1 = a;
   var num2 = b;
   var total = num1 * num2;
-  console.log(total);
+  // console.log(total);
+  return total;
 }
 
-total(100, 22);
+const finalSum = total(100, 22);
+console.log(finalSum);
