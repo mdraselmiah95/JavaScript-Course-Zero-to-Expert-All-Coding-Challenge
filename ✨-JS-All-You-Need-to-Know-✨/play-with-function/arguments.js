@@ -33,7 +33,7 @@ function sumOfArray(arr) {
 
 function test(a, b, c) {
   for (var i = 0; i < arguments.length; i++) {
-    console.log(arguments[i]);
+    // console.log(arguments[i]);
   }
 }
 
@@ -44,7 +44,7 @@ function addAll() {
   for (var i = 0; i < arguments.length; i++) {
     sum += arguments[i];
   }
-  console.log(sum);
+  //   console.log(sum);
 }
 
 addAll(1, 3, 4, 6, 8, 9, 0);
