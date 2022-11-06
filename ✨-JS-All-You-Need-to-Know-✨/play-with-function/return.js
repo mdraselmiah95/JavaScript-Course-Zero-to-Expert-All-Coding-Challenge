@@ -1,3 +1,5 @@
+// javascript function statement
+
 function addAll() {
   var sum = 0;
   for (var i = 0; i < arguments.length; i++) {
@@ -15,7 +17,10 @@ function person(name, email) {
     name: name,
     email: email,
   };
+  console.log("I will never execute");
 }
 
 var person1 = person("Rasel mia", "rasel@gmail.com");
-console.log(person1);
+var person2 = person("Tom hank", "tom@gmail.com");
+var person3 = person("Robin", "robin@gmail.com");
+console.log(person1, person2, person3);
