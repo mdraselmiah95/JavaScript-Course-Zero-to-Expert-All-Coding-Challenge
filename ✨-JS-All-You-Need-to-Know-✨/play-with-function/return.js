@@ -10,12 +10,12 @@ function addAll() {
 var result = addAll(1, 2, 4, 5);
 console.log(result);
 
-const cool = (a, b, c) => {
-  const sum = a + b;
-  const total = sum / c;
-  const result = total * 2;
-  return result;
-};
+function person(name, email) {
+  return {
+    name: name,
+    email: email,
+  };
+}
 
-const result2 = cool(20, 60, 2);
-console.log(result2);
+var person1 = person("Rasel mia", "rasel@gmail.com");
+console.log(person1);
