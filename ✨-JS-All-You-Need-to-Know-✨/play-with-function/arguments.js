@@ -17,6 +17,7 @@ function sub(a, b) {
 var arr1 = [1, 2, 3];
 var arr2 = [4, 5, 6];
 var arr3 = [7, 8, 9];
+var arr4 = [17, 48, 79, 45, 6, 7, 83, 765, 8, 8];
 
 function sumOfArray(arr) {
   var sum = 0;
@@ -25,6 +26,14 @@ function sumOfArray(arr) {
   }
   console.log(sum);
 }
-sumOfArray(arr1);
-sumOfArray(arr2);
-sumOfArray(arr3);
+// sumOfArray(arr1);
+// sumOfArray(arr2);
+// sumOfArray(arr3);
+// sumOfArray(arr4);
+
+function test(a, b, c) {
+  console.log(JSON.stringify(arguments));
+  console.log(typeof a);
+}
+
+test();
