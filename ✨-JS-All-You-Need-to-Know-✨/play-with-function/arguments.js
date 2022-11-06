@@ -32,8 +32,20 @@ function sumOfArray(arr) {
 // sumOfArray(arr4);
 
 function test(a, b, c) {
-  console.log(JSON.stringify(arguments));
-  console.log(typeof a);
+  for (var i = 0; i < arguments.length; i++) {
+    console.log(arguments[i]);
+  }
 }
 
-test();
+test(10, 33, 67);
+
+function addAll() {
+  var sum = 0;
+  for (var i = 0; i < arguments.length; i++) {
+    sum += arguments[i];
+  }
+  console.log(sum);
+}
+
+addAll(1, 3, 4, 6, 8, 9, 0);
+addAll(2, 4, 6, 7, 8, 9, 9, 456, 5667, 9789, 70, 54, 2342, 31, 22);
