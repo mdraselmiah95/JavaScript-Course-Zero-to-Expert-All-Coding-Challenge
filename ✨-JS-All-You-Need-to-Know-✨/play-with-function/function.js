@@ -26,3 +26,11 @@ function total(a = 0, b = 0) {
 
 const finalSum = total(100, 22);
 console.log(finalSum);
+
+function functionName() {
+  console.log("I am a function.");
+}
+
+for (var i = 0; i < 10; i++) {
+  functionName();
+}
