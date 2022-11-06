@@ -11,7 +11,7 @@ function sum() {
 function sub() {
   var a = 10;
   var b = 20;
-  console.log(a - b);
+  console.log(b - a);
 }
 // sub();
 // sum();
@@ -25,12 +25,21 @@ function total(a = 0, b = 0) {
 }
 
 const finalSum = total(100, 22);
-console.log(finalSum);
+// console.log(finalSum);
 
 function functionName() {
   console.log("I am a function.");
 }
 
 for (var i = 0; i < 10; i++) {
-  functionName();
+  // functionName();
 }
+
+// console.log(functionName);
+
+sub();
+sub();
+sub();
+sub();
+sub();
+sub();
