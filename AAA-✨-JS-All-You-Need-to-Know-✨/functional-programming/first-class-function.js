@@ -28,6 +28,12 @@ var obj = {
 console.log(obj);
 console.log(obj.sum(7, 13));
 
+// ▶️ We can create function as we need
+
+setTimeout(function () {
+  console.log("I am function.");
+}, 1000);
+
 // ▶️ Can be returned by another function
 // ▶️ Can be passed as a function's argument
 // ▶️ Can be stored in an array, stack, or queue
