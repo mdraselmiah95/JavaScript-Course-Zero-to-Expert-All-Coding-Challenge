@@ -1,6 +1,6 @@
 // Filter
 
-var arr = [3, 5, 7, 8, 9, 90, 12, 45, 7, 8];
+var arr = [1, 2, 3, 5, 7, 8, 9, 90, 12, 45];
 
 var filteredArr = arr.filter(function (value) {
   return value % 2 === 1;
@@ -17,6 +17,8 @@ function myFilter(arr, cb) {
   }
   return newArr;
 }
+
+console.log(arr);
 
 console.log(
   myFilter(arr, function (value) {
@@ -35,5 +37,3 @@ console.log(
     return value > 4;
   })
 );
-
-console.log(arr);
