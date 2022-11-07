@@ -1,4 +1,4 @@
-// First look at closure
+// First look at closure 🥉
 
 var b = 5;
 

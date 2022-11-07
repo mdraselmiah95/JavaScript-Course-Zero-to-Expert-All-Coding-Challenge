@@ -1,4 +1,4 @@
-// Callback function
+// Callback function 🥇
 
 function sample(a, b, cb) {
   var c = a + b;
@@ -24,3 +24,8 @@ var result3 = sample(6, 4, function (c, d) {
   return c * d;
 });
 console.log(result3);
+
+var result4 = sample(6, 4, function (c, d) {
+  return c / d;
+});
+console.log(result4);
