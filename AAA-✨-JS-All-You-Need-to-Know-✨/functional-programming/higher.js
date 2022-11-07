@@ -1,4 +1,4 @@
-// Higher Order Function
+// Higher Order Function 🉑
 
 function add(a, b) {
   return a + b;
