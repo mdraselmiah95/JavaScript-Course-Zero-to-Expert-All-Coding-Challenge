@@ -1,4 +1,4 @@
-// Javascript forEach
+// Javascript forEach 🧮
 
 var arr = [1, 3, 4, 5, 6];
 
@@ -24,3 +24,9 @@ forEach(arr, function (value, index, arr) {
 });
 
 console.log(sum);
+
+forEach(arr, function (value, index, arr) {
+  arr[index] = value + 5;
+});
+
+console.log(arr);
