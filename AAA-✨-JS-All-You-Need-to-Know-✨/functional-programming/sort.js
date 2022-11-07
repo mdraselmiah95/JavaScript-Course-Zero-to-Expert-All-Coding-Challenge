@@ -19,7 +19,7 @@ var persons = [
   },
 ];
 
-var arr = [4, -2, 75, -8, 1, 2, 3, 9, 4, 5, 6, 7, 8, 11, 19];
+var arr = [4, 75, 1, 2, 3, 9, 4, 5, 6, 7, 8, 11, 19];
 
 arr.sort();
 // console.log(arr);
@@ -37,7 +37,7 @@ arr.sort(function (a, b) {
   }
 });
 
-console.log(arr);
+// console.log(arr);
 
 persons.sort(function (a, b) {
   if (a.age > b.age) {
@@ -49,4 +49,16 @@ persons.sort(function (a, b) {
   }
 });
 
-console.log(persons);
+// console.log(persons);
+
+var res1 = arr.every(function (value) {
+  return value % 2 === 0;
+});
+
+console.log(res1);
+
+var res2 = arr.every(function (value) {
+  return value >= 0;
+});
+
+console.log(res2);
