@@ -1,4 +1,4 @@
-// Javascript sort method 🗽
+// Javascript sort , every, some method 🗽
 
 var persons = [
   {
@@ -62,3 +62,13 @@ var res2 = arr.every(function (value) {
 });
 
 console.log(res2);
+
+var res3 = arr.some(function (value) {
+  return value % 2 === 1;
+});
+console.log(res3);
+
+var res4 = arr.some(function (value) {
+  return value < 0;
+});
+console.log(res4);
