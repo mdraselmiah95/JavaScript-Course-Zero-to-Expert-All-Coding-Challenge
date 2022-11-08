@@ -10,8 +10,8 @@ var max = arr.reduce(function (prev, curr) {
   return Math.max(prev, curr);
 }, 0);
 
-// console.log(sum);
-// console.log(max);
+console.log(sum);
+console.log(max);
 
 function myReduce(arr, cb, acc) {
   for (var i = 0; i < arr.length; i++) {

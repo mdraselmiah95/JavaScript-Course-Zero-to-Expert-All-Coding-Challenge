@@ -1,4 +1,4 @@
-// Javascript Map
+// Javascript Map method 🥈
 
 var arr = [1, 3, 4, 5, 8, 9];
 
@@ -8,8 +8,8 @@ var sqrArr = arr.map(function (value) {
   return value * value;
 });
 
-// console.log(arr);
-// console.log(sqrArr);
+console.log(arr);
+console.log(sqrArr);
 
 function myMap(arr, cb) {
   var newArr = [];
@@ -21,7 +21,7 @@ function myMap(arr, cb) {
   return newArr;
 }
 
-// console.log(myMap(arr));
+console.log(myMap(arr));
 var qb = myMap(arr, function (value) {
   return value * value * value;
 });

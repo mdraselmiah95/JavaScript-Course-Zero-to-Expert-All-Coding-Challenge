@@ -6,7 +6,7 @@ var filteredArr = arr.filter(function (value) {
   return value % 2 === 1;
 });
 
-// console.log(filteredArr);
+console.log(filteredArr);
 
 function myFilter(arr, cb) {
   var newArr = [];

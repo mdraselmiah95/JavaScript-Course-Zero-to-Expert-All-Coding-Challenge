@@ -10,7 +10,7 @@ var result2 = arr.findIndex(function (value) {
   return value === 9;
 });
 
-// console.log(result, result2);
+console.log(result, result2);
 
 function myFind(arr, cb) {
   for (var i = 0; i < arr.length; i++) {
