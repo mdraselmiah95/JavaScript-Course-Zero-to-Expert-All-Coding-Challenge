@@ -20,6 +20,10 @@ function d() {
 }
 
 var x = 100;
+
+// var x;
+// x = 100;
+
 a();
 console.log("I am Global");
 
