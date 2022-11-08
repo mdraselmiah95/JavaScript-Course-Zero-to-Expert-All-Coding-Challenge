@@ -1,4 +1,4 @@
-// Javascript interpreter vs compiler
+// Javascript interpreter vs compiler 💥
 
 /*
 
