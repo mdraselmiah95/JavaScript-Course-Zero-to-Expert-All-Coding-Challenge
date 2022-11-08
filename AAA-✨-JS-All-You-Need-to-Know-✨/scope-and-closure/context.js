@@ -26,3 +26,6 @@ console.log("I am Global");
 // Execution of a B Function
 // Execution of a A Function
 // Execution of global context
+
+// Creation Phase: Creation Of The Variable Object (VO)
+// The Execution Phase
