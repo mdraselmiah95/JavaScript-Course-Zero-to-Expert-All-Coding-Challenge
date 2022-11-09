@@ -3,6 +3,7 @@
 var person = {
   id: 1,
   name: "rasel",
+  profession: "student",
   age: 27,
   status: "single",
   education: "Bsc in computer science",
@@ -12,6 +13,8 @@ var person = {
     block: "D",
     house: 28,
     float: "2nd",
+    area: "Mirpur-01",
+    division: "Dhaka",
   },
 };
 
