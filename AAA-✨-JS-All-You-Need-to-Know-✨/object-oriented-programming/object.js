@@ -13,6 +13,7 @@ var person = {
   },
 };
 
+// console.log(person);
 // Object Oriented Programming
 
 var rect = {
@@ -27,5 +28,22 @@ function calculateRange() {
   return 2 * (this.width + this.height);
 }
 
-var area = rect.calculateArea();
-var range = rect.calculateRange();
+// var area = rect.calculateArea();
+// var range = rect.calculateRange();
+
+class Rect {
+  constructor(width, height) {
+    this.width = width;
+    this.height = height;
+  }
+  calculateArea2() {
+    return this.width * this.height;
+  }
+  calculateRange2() {
+    return 2 * (this.width + this.height);
+  }
+}
+
+var rect1 = new Rect(10, 30);
+var rect2 = new Rect(20, 70);
+var rect2 = new Rect(27, 66);
