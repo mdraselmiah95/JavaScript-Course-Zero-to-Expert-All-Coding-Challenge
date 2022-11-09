@@ -1,3 +1,5 @@
+// Object Oriented Programming  🐊
+
 var person = {
   id: 1,
   name: "rasel",
@@ -47,3 +49,9 @@ class Rect {
 var rect1 = new Rect(10, 30);
 var rect2 = new Rect(20, 70);
 var rect2 = new Rect(27, 66);
+
+// OOP Stands on Four Pillar
+// 1. Abstraction
+// 2. Encapsulation
+// 3. Inheritance
+// 4. Polymorphism
