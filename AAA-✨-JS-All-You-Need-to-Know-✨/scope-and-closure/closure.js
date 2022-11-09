@@ -5,6 +5,8 @@
 // able to remember and access it's lexical scope
 // when that function executing outside it's lexical scope
 
+/*
+
 function test() {
   var msg = "I am Learning Lexical Scope and Closure";
 
@@ -15,4 +17,23 @@ function test() {
   sayMsg();
 }
 
-test();
+*/
+
+function test() {
+  var msg = "I am Learning Lexical Scope and Closure";
+
+  return function () {
+    console.log(msg);
+  };
+}
+
+var sayMsg = test();
+sayMsg();
+
+for (var i = 0; i <= 10; i++) {
+  (function (n) {
+    setTimeout(function () {
+      console.log(n);
+    }, 1000 * n);
+  })(i);
+}
