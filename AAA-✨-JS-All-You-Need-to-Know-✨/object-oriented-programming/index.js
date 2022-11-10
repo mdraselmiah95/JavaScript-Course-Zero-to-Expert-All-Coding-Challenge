@@ -28,7 +28,7 @@ var rect = {
 // }
 // new myFunc();
 
-/*
+/*        
 
 var another = {
   width: 87,
@@ -42,7 +42,7 @@ var another = {
 // console.log(another.print);
 // another.print();
 
-// Factory pattern
+// Factory pattern 🥈
 
 var createRect = function (width, height) {
   return {
@@ -62,7 +62,25 @@ var createRect = function (width, height) {
 };
 
 var rect1 = createRect(100, 150);
-rect1.draw();
+// rect1.draw();
 
 var rect2 = createRect(110, 120);
-rect2.draw();
+// rect2.draw();
+
+// Constructor pattern 🥉
+
+var Rectangle = function (width, height) {
+  this.width = width;
+  this.height = height;
+
+  this.draw = function () {
+    console.log("I am react.");
+    this.printProperties();
+    console.log(this);
+  };
+
+  this.printProperties = function () {
+    console.log("My width is " + this.width);
+    console.log("My height is " + this.height);
+  };
+};
