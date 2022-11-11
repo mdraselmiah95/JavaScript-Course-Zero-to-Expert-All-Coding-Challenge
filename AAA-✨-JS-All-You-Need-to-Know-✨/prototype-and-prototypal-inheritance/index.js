@@ -21,3 +21,5 @@ var person = {
 for (var i in person) {
   console.log(i);
 }
+
+console.log(Object.keys(person));
