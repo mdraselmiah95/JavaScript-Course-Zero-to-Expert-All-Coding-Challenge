@@ -200,8 +200,12 @@ var Rectangle = function (width, height) {
   };
 
   var printProperties = function () {
-    console.log("My width is " + width);
-    console.log("My height is " + height);
+    console.log("My width is " + this.width);
+    console.log("My height is " + this.height);
+  }.bind(this);
+
+  this.getPosition = function () {
+    return position;
   };
 
   this.draw = function () {
@@ -215,3 +219,4 @@ var Rectangle = function (width, height) {
 
 var rec7 = new Rectangle(78, 99);
 rec7.draw();
+console.log(rec7.getPosition());
