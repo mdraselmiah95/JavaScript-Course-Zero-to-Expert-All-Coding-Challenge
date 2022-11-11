@@ -85,7 +85,7 @@ var Rectangle = function (width, height) {
   };
 };
 
-// var rec3 = new Rectangle(22, 98);
+var rec3 = new Rectangle(22, 98);
 // rec3.draw();
 // console.log(rec3());
 
@@ -100,6 +100,16 @@ function MyNew(constructor) {
   return obj;
 }
 
-var rec4 = MyNew(Rectangle, 45, 30);
-rec4.draw();
-// Constructor Function 🥇
+// var rec4 = MyNew(Rectangle, 45, 30);
+// rec4.draw();
+
+// Constructor Property 🥇
+
+var str = new String("str");
+// console.log("My String is " + str);
+
+// Function are object in javascript 🎙️
+
+function test() {
+  console.log("testing the function");
+}
