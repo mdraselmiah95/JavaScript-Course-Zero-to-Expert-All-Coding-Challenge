@@ -189,4 +189,23 @@ function changeMe(obj) {
 // changeMe(obj);
 // console.log(obj);
 
-// DO the best and you need will find the best and the best. yop  top floor and answer the question as soon as possible the good and bed
+// Abstraction in javascript
+
+var Rectangle = function (width, height) {
+  this.width = width;
+  this.height = height;
+
+  this.draw = function () {
+    console.log("I am react.");
+    this.printProperties();
+    console.log(this);
+  };
+
+  this.printProperties = function () {
+    console.log("My width is " + this.width);
+    console.log("My height is " + this.height);
+  };
+};
+
+var rec7 = new Rectangle(78, 99);
+console.log(rec7);
