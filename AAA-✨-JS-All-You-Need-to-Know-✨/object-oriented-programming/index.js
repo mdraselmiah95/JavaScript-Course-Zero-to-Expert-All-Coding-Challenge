@@ -172,5 +172,19 @@ function change(n) {
   console.log(n);
 }
 
-change(10);
-console.log(n);
+// change(10);
+// console.log(n);
+
+var obj = {
+  a: 10,
+  b: 20,
+};
+
+function changeMe(obj) {
+  obj.a += 100;
+  obj.b + 100;
+  console.log(obj);
+}
+
+changeMe(obj);
+console.log(obj);
