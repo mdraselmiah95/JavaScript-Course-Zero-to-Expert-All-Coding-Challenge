@@ -84,3 +84,8 @@ var Rectangle = function (width, height) {
     console.log("My height is " + this.height);
   };
 };
+
+var rec3 = new Rectangle(22, 98);
+rec3.draw();
+console.log(rec3());
+// Constructor Function 🥇
