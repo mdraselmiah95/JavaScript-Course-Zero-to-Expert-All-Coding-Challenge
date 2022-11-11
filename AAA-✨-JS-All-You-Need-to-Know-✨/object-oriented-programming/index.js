@@ -113,7 +113,7 @@ var str = new String("str");
 function test() {
   console.log("testing the function");
 }
-
+// console.log(test.name, test.length);
 // console.log(typeof test);
 
 var Rect = new Function(
@@ -139,3 +139,16 @@ var Rect = new Function(
 var rect5 = new Rect(4, 5);
 // console.log(rect5);
 // rect5.draw();
+
+function myFunc(c, d) {
+  console.log(this);
+  console.log(this.a + this.b + c + d);
+}
+// myFunc();
+
+//  Call, Apply, Bind Method
+
+myFunc.call({ a: 30, b: 55 }, 22, 44);
+myFunc.apply({ a: 15, b: 25 }, [35, 15]);
+// myFunc.call({ a: 78, b: 87 });
+// myFunc();
