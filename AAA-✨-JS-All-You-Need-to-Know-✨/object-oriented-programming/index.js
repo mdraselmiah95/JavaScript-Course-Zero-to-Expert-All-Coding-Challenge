@@ -148,7 +148,29 @@ function myFunc(c, d) {
 
 //  Call, Apply, Bind Method
 
-myFunc.call({ a: 30, b: 55 }, 22, 44);
-myFunc.apply({ a: 15, b: 25 }, [35, 15]);
+/*
+
+myFunc.call({ a: 30, b: 55 }, 22, 44); // call method
+myFunc.apply({ a: 15, b: 25 }, [35, 15]); // apply method
+
+*/
+
 // myFunc.call({ a: 78, b: 87 });
 // myFunc();
+
+// var testBind = myFunc.bind({ a: 5, b: 15 }, 25, 5);
+var testBind = myFunc.bind({ a: 5, b: 15 });
+// testBind(25, 5);
+
+// Pass by Value vs pass by Reference
+// Call by Value vs Call by Reference
+
+var n = 10;
+
+function change(n) {
+  n += 100;
+  console.log(n);
+}
+
+change(10);
+console.log(n);
