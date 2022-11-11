@@ -18,8 +18,21 @@ var person = {
 };
 // console.log(person);
 
-for (var i in person) {
-  console.log(i);
-}
+// for (var i in person) {
+//   console.log(i);
+// }
 
-console.log(Object.keys(person));
+// console.log(Object.keys(person));
+
+var descriptor = Object.getOwnPropertyDescriptor(person, "name");
+// console.log(descriptor);
+
+var baseObj = Object.getPrototypeOf(person);
+let descriptor2 = Object.getOwnPropertyDescriptor(baseObj, "toString");
+// console.log(descriptor2);
+
+Object.defineProperty(person, "name", {
+  enumerable: false,
+  writable: false,
+  configurable: false,
+});
