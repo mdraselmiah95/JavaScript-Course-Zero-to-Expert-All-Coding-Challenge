@@ -192,21 +192,17 @@ function changeMe(obj) {
 // Abstraction in javascript
 
 var Rectangle = function (width, height) {
-  this.width = width;
-  this.height = height;
   var position = {
     x: 56,
     y: -100,
   };
+  this.width = width;
+  this.height = height;
 
   var printProperties = function () {
     console.log("My width is " + this.width);
     console.log("My height is " + this.height);
   }.bind(this);
-
-  this.getPosition = function () {
-    return position;
-  };
 
   this.draw = function () {
     console.log("I am Rectangle");
@@ -215,8 +211,20 @@ var Rectangle = function (width, height) {
       "Position X= " + position.x + " " + "Position y= " + position.y
     );
   };
+
+  Object.defineProperty(this, "position", {
+    get: function () {
+      return position;
+    },
+    set: function (value) {
+      position = value;
+    },
+  });
 };
 
 var rec7 = new Rectangle(78, 99);
 rec7.draw();
-console.log(rec7.getPosition());
+rec7.position = {
+  x: 344,
+  y: 345,
+};
