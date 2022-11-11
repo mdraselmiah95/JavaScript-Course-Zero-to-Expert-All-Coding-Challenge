@@ -113,3 +113,7 @@ var str = new String("str");
 function test() {
   console.log("testing the function");
 }
+
+// console.log(typeof test);
+
+// Running 114
