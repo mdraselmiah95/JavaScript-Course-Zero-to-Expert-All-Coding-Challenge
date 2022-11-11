@@ -194,18 +194,24 @@ function changeMe(obj) {
 var Rectangle = function (width, height) {
   this.width = width;
   this.height = height;
-
-  this.draw = function () {
-    console.log("I am react.");
-    this.printProperties();
-    console.log(this);
+  var position = {
+    x: 56,
+    y: -100,
   };
 
-  this.printProperties = function () {
-    console.log("My width is " + this.width);
-    console.log("My height is " + this.height);
+  var printProperties = function () {
+    console.log("My width is " + width);
+    console.log("My height is " + height);
+  };
+
+  this.draw = function () {
+    console.log("I am Rectangle");
+    printProperties();
+    console.log(
+      "Position X= " + position.x + " " + "Position y= " + position.y
+    );
   };
 };
 
 var rec7 = new Rectangle(78, 99);
-console.log(rec7);
+rec7.draw();
