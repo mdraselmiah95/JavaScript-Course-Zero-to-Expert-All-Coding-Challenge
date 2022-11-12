@@ -44,6 +44,21 @@ function Person(name) {
   this.name = name;
 }
 
-var p1 = new Person("RM Rasel");
+Person.prototype.PI = 3.1416;
 
-console.log(Object.getPrototypeOf(p1));
+var p1 = new Person("RM Rasel");
+var p2 = new Person("Rasel mia");
+// console.log(p1, p2);
+
+// console.log(Object.getPrototypeOf(p1));
+
+function Square(width) {
+  this.width = width;
+
+  this.draw = function () {
+    console.log("Draw");
+  };
+}
+
+var sqr1 = new Square(10);
+var sqr2 = new Square(5);
