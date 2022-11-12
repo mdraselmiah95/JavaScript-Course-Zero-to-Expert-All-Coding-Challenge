@@ -39,3 +39,11 @@ Object.defineProperty(person, "name", {
 });
 
 // 124 start
+
+function Person(name) {
+  this.name = name;
+}
+
+var p1 = new Person("RM Rasel");
+
+console.log(Object.getPrototypeOf(p1));
