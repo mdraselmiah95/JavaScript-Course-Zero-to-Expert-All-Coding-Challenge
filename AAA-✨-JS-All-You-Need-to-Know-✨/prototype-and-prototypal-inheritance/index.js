@@ -70,4 +70,9 @@ Square.prototype = {
 
 var sqr1 = new Square(10);
 var sqr2 = new Square(5);
+
+// console.log(Object.keys(sqr1));
+for (var i in sqr1) {
+  console.log(i);
+}
 // console.log(sqr1, sqr2);
