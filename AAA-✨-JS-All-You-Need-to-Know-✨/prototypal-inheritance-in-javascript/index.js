@@ -24,6 +24,10 @@ Square.prototype.draw = function () {
   console.log("Drawing");
 };
 
+Square.prototype.common = function () {
+  console.log("I am calling from Circle and i have overwritten.");
+};
+
 // var shape = new Shape();
 var sqr = new Square(36, "green");
 
@@ -41,7 +45,8 @@ function Circle(radius, color) {
 
 extend(Shape, Circle);
 Circle.prototype.common = function () {
-  Shape.prototype.common.call(this);
+  // Shape.prototype.common.call(this);
   console.log("I am calling from Circle and i have overwritten.");
 };
-// var circle = new Circle(49, "Red");
+var circle = new Circle(49, "Red");
+var s = new Shape("Purple");
