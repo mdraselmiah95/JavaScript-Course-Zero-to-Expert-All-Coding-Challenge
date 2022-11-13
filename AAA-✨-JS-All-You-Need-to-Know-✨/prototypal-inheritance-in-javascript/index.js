@@ -1,3 +1,5 @@
+// Prototypal inheritance in javascript 🍟
+
 function extend(Parent, Child) {
   Child.prototype = Object.create(Parent.prototype);
   Child.prototype.constructor = Child;
@@ -25,7 +27,7 @@ Square.prototype.draw = function () {
 };
 
 Square.prototype.common = function () {
-  console.log("I am calling from Circle and i have overwritten.");
+  console.log("I am calling from Square and i have overwritten.");
 };
 
 // var shape = new Shape();
@@ -48,5 +50,14 @@ Circle.prototype.common = function () {
   // Shape.prototype.common.call(this);
   console.log("I am calling from Circle and i have overwritten.");
 };
-var circle = new Circle(49, "Red");
+
+var c = new Circle(49, "Red");
 var s = new Shape("Purple");
+
+var shapes = [s, c, sqr];
+
+for (var i of shapes) {
+  i.common();
+}
+
+// 135 running
