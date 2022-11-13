@@ -60,6 +60,12 @@ for (var i of shapes) {
   // i.common();
 }
 
+// Inheritance & Composition Mixing in javascript 🚕
+
+function mixin(target, ...sources) {
+  Object.assign(target, ...sources);
+}
+
 var canWalk = {
   walk: function () {
     console.log("Walking...");
@@ -72,5 +78,31 @@ var canEat = {
   },
 };
 
-var person = Object.assign({}, canWalk, canEat);
+var canSwim = {
+  swim: function () {
+    console.log("Swimming...");
+  },
+};
+
+// var person = Object.assign({}, canWalk, canEat);
+// person.name = "Rasel mia";
+
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
+
+// Object.assign(Person.prototype, canWalk, canEat);
+mixin(Person.prototype, canEat, canWalk);
+
+var person = new Person("Rasel mia", 26);
 console.log(person);
+
+function GoldFish(name) {
+  this.name = name;
+}
+
+mixin(GoldFish.prototype, canEat, canSwim);
+
+var fish = new GoldFish("Gold fish");
+console.log(fish);
