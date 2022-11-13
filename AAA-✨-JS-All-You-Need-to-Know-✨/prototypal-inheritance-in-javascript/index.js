@@ -1,4 +1,4 @@
-// Prototypal inheritance in javascript 🍟
+// Prototypal inheritance in javascript 🍟  (To learn proper javascript 1-136 video is very important 💥 ➕ 🚴‍♂️)
 
 function extend(Parent, Child) {
   Child.prototype = Object.create(Parent.prototype);
