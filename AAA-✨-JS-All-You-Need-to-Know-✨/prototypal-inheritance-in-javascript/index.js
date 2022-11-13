@@ -57,7 +57,20 @@ var s = new Shape("Purple");
 var shapes = [s, c, sqr];
 
 for (var i of shapes) {
-  i.common();
+  // i.common();
 }
 
-// 135 running
+var canWalk = {
+  walk: function () {
+    console.log("Walking...");
+  },
+};
+
+var canEat = {
+  eat: function () {
+    console.log("Eating...");
+  },
+};
+
+var person = Object.assign({}, canWalk, canEat);
+console.log(person);
