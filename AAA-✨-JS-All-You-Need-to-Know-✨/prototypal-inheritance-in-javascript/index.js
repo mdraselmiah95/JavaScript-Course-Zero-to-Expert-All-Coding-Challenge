@@ -1,10 +1,13 @@
-function Shape() {}
+function Shape(color) {
+  this.color = color;
+}
 
 Shape.prototype.common = function () {
   console.log("I am common Method");
 };
 
-function Square(width) {
+function Square(width, color) {
+  Shape.call(this, color);
   this.width = width;
 }
 
@@ -15,17 +18,20 @@ Square.prototype.draw = function () {
   console.log("Drawing");
 };
 
-var shape = new Shape();
-var sqr = new Square(6);
+// var shape = new Shape();
+var sqr = new Square(36, "green");
 
 // shape => shape => object
 // sqr => Square => Object
 // sqr => Square => Shape => Object
 
 // var sqe = new Square(12);
-// console.log(sqe);
+// console.log(sqe);   this is what i expected rost the go
 
-function Circle() {}
+function Circle(radius, color) {
+  Shape.call(this, color);
+  this.radius = radius;
+}
 Circle.prototype = Object.create(Shape.prototype);
-
-var circle = new Circle();
+Circle.prototype.constructor = Circle;
+var circle = new Circle(49, "Red");
