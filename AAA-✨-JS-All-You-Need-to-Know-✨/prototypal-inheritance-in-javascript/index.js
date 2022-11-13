@@ -1,9 +1,7 @@
 function Shape() {}
 
-Shape.prototype = {
-  common: function () {
-    console.log("I am common Method");
-  },
+Shape.prototype.common = function () {
+  console.log("I am common Method");
 };
 
 function Square(width) {
@@ -11,11 +9,10 @@ function Square(width) {
 }
 
 Square.prototype = Object.create(Shape.prototype);
+Square.prototype.constructor = Square;
 
-Square.prototype = {
-  draw: function () {
-    console.log("Drawing");
-  },
+Square.prototype.draw = function () {
+  console.log("Drawing");
 };
 
 var shape = new Shape();
@@ -27,3 +24,8 @@ var sqr = new Square(6);
 
 // var sqe = new Square(12);
 // console.log(sqe);
+
+function Circle() {}
+Circle.prototype = Object.create(Shape.prototype);
+
+var circle = new Circle();
