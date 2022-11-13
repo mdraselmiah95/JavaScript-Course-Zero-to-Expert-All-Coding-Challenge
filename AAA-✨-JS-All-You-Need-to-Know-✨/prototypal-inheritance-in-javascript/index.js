@@ -72,6 +72,12 @@ var canWalk = {
   },
 };
 
+var read = {
+  title: function () {
+    console.log("Reading...");
+  },
+};
+
 var canEat = {
   eat: function () {
     console.log("Eating...");
@@ -106,3 +112,11 @@ mixin(GoldFish.prototype, canEat, canSwim);
 
 var fish = new GoldFish("Gold fish");
 console.log(fish);
+
+function Books(author) {
+  this.author = author;
+}
+
+mixin(Books.prototype, canEat, read);
+var book = new Books("Wings of Fire");
+console.log(book);
