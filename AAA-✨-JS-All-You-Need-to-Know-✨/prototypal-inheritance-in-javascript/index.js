@@ -38,8 +38,10 @@ function Circle(radius, color) {
   Shape.call(this, color);
   this.radius = radius;
 }
-// Circle.prototype = Object.create(Shape.prototype);
-// Circle.prototype.constructor = Circle;
 
 extend(Shape, Circle);
-var circle = new Circle(49, "Red");
+Circle.prototype.common = function () {
+  Shape.prototype.common.call(this);
+  console.log("I am calling from Circle and i have overwritten.");
+};
+// var circle = new Circle(49, "Red");
