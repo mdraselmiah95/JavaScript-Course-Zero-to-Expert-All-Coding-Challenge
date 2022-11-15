@@ -18,3 +18,7 @@ console.log(
     age < 18 ? "Not " : ""
   }adult.`
 );
+
+console.log(name.padStart(18, "*"));
+console.log(name.padEnd(18, "*"));
+console.log("S".repeat(10));
