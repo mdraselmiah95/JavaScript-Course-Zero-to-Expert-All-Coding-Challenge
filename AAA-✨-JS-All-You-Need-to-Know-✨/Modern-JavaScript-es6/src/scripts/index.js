@@ -57,8 +57,44 @@ let sum = function (a, b) {
 
 */
 
-let add = (a, b) => {
-  return a + b;
-};
+let add = (a, b) => a + b;
+//   return a + b;
+
 let ad = add(2, 5);
-console.log(ad);
+// console.log(ad);
+
+let sqr = (x) => x * x;
+// console.log(sqr(9));
+
+/*
+
+function test() {
+  console.log(this);
+}
+
+test.call();
+
+let obj = {
+  name: "Rasel",
+  print: () => {
+    console.log(this);
+  },
+};
+
+obj.print();
+
+*/
+
+// Arrow function  that will
+
+let obj = {
+  name: "Rasel mia",
+  print: function () {
+    console.log(this.name);
+    setTimeout(function () {
+      console.log(`Hello, ${this.name}`);
+    }, 1000);
+  },
+};
+
+obj.print();
