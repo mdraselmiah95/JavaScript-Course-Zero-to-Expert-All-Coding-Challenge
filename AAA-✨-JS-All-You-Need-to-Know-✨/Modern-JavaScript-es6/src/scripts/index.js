@@ -56,3 +56,9 @@ let sum = function (a, b) {
 
 
 */
+
+let add = (a, b) => {
+  return a + b;
+};
+let ad = add(2, 5);
+console.log(ad);
