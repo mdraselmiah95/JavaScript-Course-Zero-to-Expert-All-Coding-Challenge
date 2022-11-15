@@ -10,7 +10,11 @@ import "../styles/index.scss";
 // `;
 // console.log(s.trim());
 
-var age = 23;
+var age = 9;
 var name = "Rasel mia";
 
-console.log(`My Name is ${name} and i am ${age} years old.`);
+console.log(
+  `My Name is ${name} and i am ${age} years old. I am ${
+    age < 18 ? "Not " : ""
+  }adult.`
+);
