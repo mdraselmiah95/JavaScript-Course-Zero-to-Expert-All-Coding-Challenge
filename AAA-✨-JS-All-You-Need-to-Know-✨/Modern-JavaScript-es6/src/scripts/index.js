@@ -226,3 +226,16 @@ let objArr = [
   ["b", 76],
 ];
 // console.log(Object.fromEntries(objArr));
+
+//Symbols in javaScript 🥈
+
+let s1 = Symbol();
+let s2 = Symbol("test symbol");
+// console.log(s1, s2);
+//console.log(s1 === s2);
+
+let toss = {
+  HEAD: Symbol("HEAD"),
+  TAIL: Symbol("TAIL"),
+};
+console.log(toss);
