@@ -124,7 +124,7 @@ greet("Tom", "Hello");
 
 let obj1 = {
   start: 1,
-  end: 10,
+  end: 6,
   [Symbol.iterator]: function () {
     let currentValue = this.start;
     const self = this;
@@ -139,6 +139,12 @@ let obj1 = {
   },
 };
 
-for (let v of obj1) {
-  console.log(v);
-}
+// for (let v of obj1) {
+//   console.log(v);
+// }
+
+let iterate = obj1[Symbol.iterator]();
+console.log(iterate.next());
+console.log(iterate.next());
+console.log(iterate.next());
+console.log(iterate.next());
