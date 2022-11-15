@@ -156,4 +156,20 @@ function sum(...rest) {
   return rest.reduce((a, b) => a + b);
 }
 
-console.log(sum(10, 20, 11, 9));
+// console.log(sum(10, 20, 11, 9));
+
+let a = [1, 2, 3, 5, 4];
+// console.log(...a);
+
+let obj3 = {
+  a: 10,
+  b: 20,
+  c: 30,
+};
+
+let ob = {
+  ...obj3,
+};
+console.log(ob);
+
+//video 145
