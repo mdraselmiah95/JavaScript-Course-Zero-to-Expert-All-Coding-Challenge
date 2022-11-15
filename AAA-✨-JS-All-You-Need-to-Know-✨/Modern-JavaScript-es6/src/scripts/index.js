@@ -29,12 +29,30 @@ console.log(
 // console.log("S".repeat(10));
 
 // Let ve Const vs Var
+/*
 
 if (true) {
-  var a = 10;
+  let a = 10;
 }
 
 console.log(a);
 
 for (var i = 0; i < 5; i++) {}
 console.log(i);
+
+*/
+
+// Arrow function Syntax 👍
+
+/*
+
+function add(a, b) {
+  return a + b;
+}
+
+let sum = function (a, b) {
+  return a + b;
+};
+
+
+*/
