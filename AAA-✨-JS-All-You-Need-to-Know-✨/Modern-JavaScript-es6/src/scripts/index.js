@@ -90,11 +90,30 @@ obj.print();
 let obj = {
   name: "Rasel mia",
   print: function () {
-    let self = this;
-    setTimeout(function () {
-      console.log(`Hello, ${self.name}`);
+    // let self = this;
+    setTimeout(() => {
+      console.log(this);
+      console.log(`Hello, ${this.name}`);
     }, 1000);
   },
 };
 
-obj.print();
+// obj.print();
+
+// Default parameter
+
+/*
+
+function sqr1(n = 1) {
+  return n * n;
+}
+
+console.log(sqr1());
+
+*/
+
+function greet(name = "Rasel mia", msg = "Hello") {
+  console.log(`${msg} ${name}`);
+}
+
+greet("Tom", "Hello");
