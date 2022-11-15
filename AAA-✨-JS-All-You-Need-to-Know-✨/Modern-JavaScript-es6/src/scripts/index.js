@@ -112,8 +112,33 @@ console.log(sqr1());
 
 */
 
+/*
+
 function greet(name = "Rasel mia", msg = "Hello") {
   console.log(`${msg} ${name}`);
 }
 
 greet("Tom", "Hello");
+
+*/
+
+let obj1 = {
+  start: 1,
+  end: 10,
+  [Symbol.iterator]: function () {
+    let currentValue = this.start;
+    const self = this;
+    return {
+      next() {
+        return {
+          done: currentValue > self.end,
+          value: currentValue++,
+        };
+      },
+    };
+  },
+};
+
+for (let v of obj1) {
+  console.log(v);
+}
