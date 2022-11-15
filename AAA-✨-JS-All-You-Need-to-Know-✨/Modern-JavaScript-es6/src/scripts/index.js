@@ -170,6 +170,17 @@ let obj3 = {
 let ob = {
   ...obj3,
 };
-console.log(ob);
+// console.log(ob);
 
-//video 145
+let a1 = 10,
+  b1 = 20;
+
+let obj4 = {
+  a1,
+  b1,
+  print: function () {
+    console.log(this);
+  },
+};
+console.log(obj4);
+obj4.print();
