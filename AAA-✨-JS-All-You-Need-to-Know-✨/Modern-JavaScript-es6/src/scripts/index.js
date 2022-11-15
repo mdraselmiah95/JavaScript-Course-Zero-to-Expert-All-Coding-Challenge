@@ -190,11 +190,24 @@ let obj4 = {
 let person = {
   name: "Rasel mia",
   email: "rasel@gmail.com",
+  address: {
+    city: "Dhaka",
+    country: "Bangladesh",
+  },
 };
 
 // let name = person.name;
 // let email = person.email;
 
-let { name, email } = person;
+let {
+  name,
+  email,
+  address: { city, country },
+} = person;
 
-console.log(name, email);
+// console.log(name, email, city, country);
+
+let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+
+let [first, second, third] = arr;
+console.log(first, second, third);
