@@ -10,6 +10,8 @@ import "../styles/index.scss";
 // `;
 // console.log(s.trim());
 
+/*
+
 var age = 9;
 var name = "Rasel mia";
 
@@ -19,6 +21,20 @@ console.log(
   }adult.`
 );
 
-console.log(name.padStart(18, "*"));
-console.log(name.padEnd(18, "*"));
-console.log("S".repeat(10));
+
+*/
+
+// console.log(name.padStart(18, "*"));
+// console.log(name.padEnd(18, "*"));
+// console.log("S".repeat(10));
+
+// Let ve Const vs Var
+
+if (true) {
+  var a = 10;
+}
+
+console.log(a);
+
+for (var i = 0; i < 5; i++) {}
+console.log(i);
