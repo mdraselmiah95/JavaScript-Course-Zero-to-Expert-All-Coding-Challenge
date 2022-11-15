@@ -152,13 +152,8 @@ let obj1 = {
 
 // Rest & Spread Operator 💯
 
-function sum() {
-  let sum = 0;
-  for (let i = 0; i < arguments.length; i++) {
-    sum += arguments[i];
-  }
-
-  return sum;
+function sum(...rest) {
+  return rest.reduce((a, b) => a + b);
 }
 
-console.log(sum(12, 4, 56, 67, 78, 9));
+console.log(sum(10, 20, 11, 9));
