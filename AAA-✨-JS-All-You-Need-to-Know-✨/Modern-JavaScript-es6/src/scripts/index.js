@@ -143,8 +143,22 @@ let obj1 = {
 //   console.log(v);
 // }
 
-let iterate = obj1[Symbol.iterator]();
-console.log(iterate.next());
-console.log(iterate.next());
-console.log(iterate.next());
-console.log(iterate.next());
+// let iterate = obj1[Symbol.iterator]();
+// console.log(iterate.next());
+// console.log(iterate.next());
+// console.log(iterate.next());
+// console.log(iterate.next());
+// console.log(iterate.next());
+
+// Rest & Spread Operator 💯
+
+function sum() {
+  let sum = 0;
+  for (let i = 0; i < arguments.length; i++) {
+    sum += arguments[i];
+  }
+
+  return sum;
+}
+
+console.log(sum(12, 4, 56, 67, 78, 9));
