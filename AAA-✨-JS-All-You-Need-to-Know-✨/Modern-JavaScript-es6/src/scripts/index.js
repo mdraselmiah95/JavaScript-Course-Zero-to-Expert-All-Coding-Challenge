@@ -85,7 +85,7 @@ obj.print();
 
 */
 
-// Arrow function  that will
+// Arrow function
 
 let obj = {
   name: "Rasel mia",
@@ -185,7 +185,7 @@ let obj4 = {
 // console.log(obj4);
 // obj4.print();
 
-// Destructuring in javascript
+// Destructuring in javascript 🥇
 
 let person = {
   name: "Rasel mia",
@@ -210,4 +210,19 @@ let {
 let arr = [1, 2, 3, 4, 5, 6, 7, 8];
 
 let [first, second, third] = arr;
-console.log(first, second, third);
+// console.log(first, second, third);
+
+//Object from Entries 🥇
+
+var obj2 = {
+  a: 10,
+  b: 20,
+};
+
+//console.log(Object.entries(obj2));
+
+let objArr = [
+  ["a", 44],
+  ["b", 76],
+];
+// console.log(Object.fromEntries(objArr));
