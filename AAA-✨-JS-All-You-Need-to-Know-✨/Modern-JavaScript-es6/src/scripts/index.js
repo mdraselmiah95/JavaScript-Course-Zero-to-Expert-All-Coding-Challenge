@@ -178,9 +178,23 @@ let a1 = 10,
 let obj4 = {
   a1,
   b1,
-  print: function () {
+  print() {
     console.log(this);
   },
 };
-console.log(obj4);
-obj4.print();
+// console.log(obj4);
+// obj4.print();
+
+// Destructuring in javascript
+
+let person = {
+  name: "Rasel mia",
+  email: "rasel@gmail.com",
+};
+
+// let name = person.name;
+// let email = person.email;
+
+let { name, email } = person;
+
+console.log(name, email);
