@@ -90,9 +90,9 @@ obj.print();
 let obj = {
   name: "Rasel mia",
   print: function () {
-    console.log(this.name);
+    let self = this;
     setTimeout(function () {
-      console.log(`Hello, ${this.name}`);
+      console.log(`Hello, ${self.name}`);
     }, 1000);
   },
 };
