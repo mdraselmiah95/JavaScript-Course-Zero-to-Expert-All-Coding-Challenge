@@ -43,9 +43,33 @@ let iteratorText = str[Symbol.iterator]();
 // console.log(iteratorText.next());
 
 for (let v of arr) {
-  console.log(v);
+  //   console.log(v);
 }
 
 for (let v of str) {
+  //   console.log(v);
+}
+
+// Generator 👍
+
+/*
+
+let obj = {
+  start: 1,
+  end: 5,
+
+  [Symbol.iterator]: function* () {
+    let currentValue = this.start;
+    while (currentValue <= this.end) {
+      yield currentValue++;
+    }
+  },
+};
+
+for (let v of obj) {
   console.log(v);
 }
+
+*/
+
+function generate() {}
