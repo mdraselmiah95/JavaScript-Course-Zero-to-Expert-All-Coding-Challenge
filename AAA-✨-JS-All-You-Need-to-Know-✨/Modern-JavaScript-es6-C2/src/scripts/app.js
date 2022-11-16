@@ -113,5 +113,22 @@ set.add(1);
 // console.log(keyIterate.next());
 
 for (let v of set) {
-  console.log(v);
+  // console.log(v);
 }
+
+// console.log(set.entries());
+
+// map in javascript 🥇
+let map = new Map([
+  ["a", 10],
+  ["b", 20],
+  ["c", 30],
+]);
+
+map.set("d", 40);
+// map.delete("c");
+// map.clear()
+
+console.log(map);
+console.log(map.get("a"));
+console.log(map.size);
