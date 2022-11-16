@@ -193,6 +193,7 @@ class Rectangle {
   constructor(width, height) {
     this.width = width;
     this.height = height;
+    this.another = function () {};
   }
 
   draw() {
@@ -201,5 +202,5 @@ class Rectangle {
 }
 
 let rect = new Rectangle(12, 45);
-// console.log(rect);
+console.log(rect);
 // console.log(typeof Rectangle);
