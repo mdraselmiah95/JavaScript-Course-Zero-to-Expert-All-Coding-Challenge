@@ -101,4 +101,17 @@ console.log(it.next());
 let set = new Set([1, 2, 4]);
 set.add(8);
 set.add(11);
-console.log(set);
+set.add(1);
+
+// console.log(set.size);
+// set.clear();
+// set.delete(4);
+// console.log(set.has(4));
+// console.log(set);
+
+// let keyIterate = set.values();
+// console.log(keyIterate.next());
+
+for (let v of set) {
+  console.log(v);
+}
