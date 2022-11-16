@@ -125,7 +125,7 @@ let map = new Map([
   ["c", 30],
 ]);
 
-map.set("d", 40);
+// map.set("d", 40);
 // map.delete("c");
 // map.clear()
 
@@ -138,5 +138,22 @@ map.set("d", 40);
 // for (let [k, v] of map) {
 //   console.log(v, k);
 // }
+// map.set({ name: "Rasel" }, 26);
 
-map.forEach((v, k) => console.log(k, v));
+// map.forEach((v, k) => console.log(k, v));
+
+// Weak Set in JavaScript 🥉
+
+let a = { a: 10 },
+  b = { b: 19 };
+
+// let set1 = new Set([a, b]);
+// console.log(set1);
+
+// a = null;
+// let arr1 = [...set];
+// console.log(arr1[0]);
+
+let weakSet = new WeakSet([a, b]);
+a = null;
+console.log(weakSet.has(b));
