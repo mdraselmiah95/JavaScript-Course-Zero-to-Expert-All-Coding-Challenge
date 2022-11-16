@@ -154,6 +154,18 @@ let a = { a: 10 },
 // let arr1 = [...set];
 // console.log(arr1[0]);
 
-let weakSet = new WeakSet([a, b]);
+// let weakSet = new WeakSet([a, b]);
+// a = null;
+// console.log(weakSet.has(b));
+
+// Weak map in JavaScript 🥉
+
+let weakMap = new WeakMap([
+  [a, 34],
+  [b, 76],
+]);
 a = null;
-console.log(weakSet.has(b));
+
+// console.log(weakMap.get(a));
+console.log(weakMap.has(a));
+console.log(weakMap.has(b));
