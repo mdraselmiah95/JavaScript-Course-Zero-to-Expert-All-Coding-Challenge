@@ -78,14 +78,27 @@ for (let v of obj) {
 //   yield 3;
 // }
 
+/*
+
+let arr2 = [1, 4, 6, 78];
+
 function* generate(collection) {
   for (let i = 0; i < collection.length; i++) {
     yield collection[i];
   }
 }
 
-let it = generate(arr);
+let it = generate(arr2);
 console.log(it.next());
 console.log(it.next());
 console.log(it.next());
 console.log(it.next());
+
+*/
+
+// Set in Javascript 🥈
+
+let set = new Set([1, 2, 4]);
+set.add(8);
+set.add(11);
+console.log(set);
