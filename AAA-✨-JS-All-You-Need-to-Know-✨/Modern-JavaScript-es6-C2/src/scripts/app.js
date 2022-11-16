@@ -28,11 +28,24 @@ function createIterator(collection) {
 // const iterator = createIterator(arr);
 let iterator = arr[Symbol.iterator]();
 
-console.log(iterator.next());
-console.log(iterator.next());
-console.log(iterator.next());
-console.log(iterator.next());
-console.log(iterator.next());
+// console.log(iterator.next());
+// console.log(iterator.next());
+// console.log(iterator.next());
+// console.log(iterator.next());
+// console.log(iterator.next());
 
 // console.log(arr[Symbol.iterator]);
 // console.log("arr"[Symbol.iterator]);
+
+let str = "TEXT to motivation";
+let iteratorText = str[Symbol.iterator]();
+
+// console.log(iteratorText.next());
+
+for (let v of arr) {
+  console.log(v);
+}
+
+for (let v of str) {
+  console.log(v);
+}
