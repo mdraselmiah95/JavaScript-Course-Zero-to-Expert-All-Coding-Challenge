@@ -129,6 +129,14 @@ map.set("d", 40);
 // map.delete("c");
 // map.clear()
 
-console.log(map);
-console.log(map.get("a"));
-console.log(map.size);
+// console.log(map);
+// console.log(map.get("a"));
+// console.log(map.size);
+// console.log(map.values());
+// console.log(map.keys());
+// console.log(map.entries());
+// for (let [k, v] of map) {
+//   console.log(v, k);
+// }
+
+map.forEach((v, k) => console.log(k, v));
