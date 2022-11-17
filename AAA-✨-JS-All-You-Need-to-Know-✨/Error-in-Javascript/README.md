@@ -1,0 +1,1 @@
+# Learn Error in Javascript 💥
