@@ -359,6 +359,9 @@ class Rectangle1 extends Shape1 {
     this.width = width;
     this.height = height;
   }
+  draw() {
+    console.log("Drawing a Rectangle...");
+  }
 
   calculate() {
     return this.width * this.height;
