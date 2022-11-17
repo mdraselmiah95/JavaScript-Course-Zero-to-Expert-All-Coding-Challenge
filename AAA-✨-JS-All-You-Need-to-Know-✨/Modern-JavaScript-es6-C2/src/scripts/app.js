@@ -275,16 +275,22 @@ let key = Object.getOwnPropertySymbols(c1)[0];
 
 const _radius1 = new WeakMap();
 const _name1 = new WeakMap();
+const _resize = new WeakMap();
 
 class Circle1 {
   constructor(radius, name) {
+    this.size = 100;
     _radius1.set(this, radius);
     _name1.set(this, name);
+    _resize.set(this, () => {
+      console.log(this.size);
+    });
   }
 
   draw() {
     console.log("Drawing...");
     console.log(_radius1.get(this), _name1.get(this));
+    _resize.get(this)();
   }
 }
 
