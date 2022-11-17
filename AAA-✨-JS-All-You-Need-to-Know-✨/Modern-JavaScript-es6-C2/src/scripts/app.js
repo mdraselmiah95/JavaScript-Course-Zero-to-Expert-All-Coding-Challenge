@@ -342,4 +342,19 @@ c3.draw();
 c3.radius = 99;
 console.log(c3.radius);
 
-//video 166
+// Inheritance in ES6 🕥
+
+class Shape1 {
+  draw() {
+    console.log("Drawing...");
+  }
+}
+
+class Rectangle1 {
+  constructor(width, height) {
+    this.width = width;
+    this.height = height;
+  }
+}
+
+// Prothom alo is our
