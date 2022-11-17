@@ -216,6 +216,11 @@ class Person {
   print() {
     console.log(this.name, this.email);
   }
+
+  test() {
+    console.log(this);
+  }
+
   static create(str) {
     let person = JSON.parse(str);
     return new Person(person.name, person.email);
@@ -237,4 +242,24 @@ function Shape() {
 
 let s1 = new Shape();
 let anotherDraw = s1.draw;
-anotherDraw();
+// anotherDraw();
+
+// let test = p1.test;
+// test();
+
+// Private Data with Symbol 🥉
+
+const _radius = Symbol();
+
+class Circle {
+  constructor(radius) {
+    this[_radius] = radius;
+  }
+
+  draw() {
+    console.log("Drawing...");
+  }
+}
+
+let c1 = new Circle(2);
+console.log(c1);
