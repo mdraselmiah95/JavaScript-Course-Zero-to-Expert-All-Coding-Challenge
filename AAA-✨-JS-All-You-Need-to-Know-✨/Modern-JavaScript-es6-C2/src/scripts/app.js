@@ -345,16 +345,26 @@ console.log(c3.radius);
 // Inheritance in ES6 🕥
 
 class Shape1 {
+  constructor(color) {
+    this.color = color;
+  }
   draw() {
     console.log("Drawing...");
   }
 }
 
-class Rectangle1 {
-  constructor(width, height) {
+class Rectangle1 extends Shape1 {
+  constructor(color, width, height) {
+    super(color);
     this.width = width;
     this.height = height;
   }
+
+  calculate() {
+    return this.width * this.height;
+  }
 }
 
-// Prothom alo is our
+let r = new Rectangle1("Green", 9, 7);
+console.log(r);
+r.draw();
