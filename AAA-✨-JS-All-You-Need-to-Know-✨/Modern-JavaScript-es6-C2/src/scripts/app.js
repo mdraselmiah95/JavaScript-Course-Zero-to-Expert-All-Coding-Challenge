@@ -250,10 +250,12 @@ let anotherDraw = s1.draw;
 // Private Data with Symbol 🥉
 
 const _radius = Symbol();
+const _name = Symbol();
 
 class Circle {
-  constructor(radius) {
+  constructor(radius, name) {
     this[_radius] = radius;
+    this[_name] = name;
   }
 
   draw() {
@@ -261,5 +263,9 @@ class Circle {
   }
 }
 
-let c1 = new Circle(2);
+let c1 = new Circle(2, "CRUD");
 console.log(c1);
+
+console.log(Object.getOwnPropertyNames(c1));
+let key = Object.getOwnPropertySymbols(c1)[1];
+console.log(c1[key]);
