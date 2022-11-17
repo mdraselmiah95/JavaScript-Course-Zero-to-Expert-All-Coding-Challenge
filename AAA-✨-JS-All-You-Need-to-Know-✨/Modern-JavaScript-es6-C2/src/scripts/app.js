@@ -302,6 +302,37 @@ class Circle1 {
 }
 
 let c2 = new Circle1(5, "CRED");
-c2.draw();
-c2.radius = 77;
-console.log(c2.radius);
+// c2.draw();
+// c2.radius = 77;
+// console.log(c2.radius);
+
+// Getter and Setter in ES6 ✈️
+
+const _radius3 = new WeakMap();
+const _name3 = new WeakMap();
+const _resize3 = new WeakMap();
+
+class Circle3 {
+  constructor(radius, name) {
+    this.size = 100;
+    _radius3.set(this, radius);
+    _name3.set(this, name);
+    _resize3.set(this, () => {
+      console.log(this.size);
+    });
+  }
+
+  getRadius() {
+    return _radius3.get(this);
+  }
+
+  draw() {
+    console.log("Drawing...");
+    console.log(_radius3.get(this), _name3.get(this));
+    _resize3.get(this)();
+  }
+}
+
+let c3 = new Circle3(9, "CRUD");
+c3.draw();
+console.log(c3.getRadius());
