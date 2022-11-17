@@ -205,4 +205,15 @@ let rect = new Rectangle(12, 45);
 // console.log(rect);
 // console.log(typeof Rectangle);
 
-// This is it not iteration in javascript this is cool and also not know cool and hot and also null not to do that this sis system are not good
+// Static Method 🥇
+
+class Person {
+  constructor(name, email) {
+    this.name = name;
+    this.email = email;
+  }
+
+  print() {
+    console.log(this.name, this.email);
+  }
+}
