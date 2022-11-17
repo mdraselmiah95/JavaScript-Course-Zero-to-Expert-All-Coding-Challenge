@@ -287,6 +287,13 @@ class Circle1 {
     });
   }
 
+  get radius() {
+    return _radius1.get(this);
+  }
+  set radius(v) {
+    return _radius1.set(this, v);
+  }
+
   draw() {
     console.log("Drawing...");
     console.log(_radius1.get(this), _name1.get(this));
@@ -296,3 +303,5 @@ class Circle1 {
 
 let c2 = new Circle1(5, "CRED");
 c2.draw();
+c2.radius = 77;
+console.log(c2.radius);
