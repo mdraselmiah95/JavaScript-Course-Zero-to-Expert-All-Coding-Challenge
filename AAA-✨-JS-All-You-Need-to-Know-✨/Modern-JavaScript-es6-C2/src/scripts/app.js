@@ -343,8 +343,9 @@ c3.radius = 99;
 console.log(c3.radius);
 
 // Inheritance in ES6 🕥
-
-class Shape1 {
+/*
+  
+  class Shape1 {
   constructor(color) {
     this.color = color;
   }
@@ -367,6 +368,9 @@ class Rectangle1 extends Shape1 {
     return this.width * this.height;
   }
 }
+  
+  */
+import Rectangle1 from "./Rectangle";
 
 let r = new Rectangle1("Green", 9, 7);
 console.log(r);
