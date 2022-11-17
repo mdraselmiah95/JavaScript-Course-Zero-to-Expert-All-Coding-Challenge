@@ -380,4 +380,10 @@ import Rectangle1 from "./Rectangle";
 
 import * as func from "./func";
 
-console.log(func.add(12, 8));
+// console.log(func.add(12, 8));
+// console.log(func.times(10, 8));
+
+import { add, div } from "./func";
+
+console.log(add(12, 38));
+console.log(div(50, 5));
