@@ -322,8 +322,12 @@ class Circle3 {
     });
   }
 
-  getRadius() {
+  get radius() {
     return _radius3.get(this);
+  }
+
+  set radius(v) {
+    return _radius3.set(this, v);
   }
 
   draw() {
@@ -335,4 +339,7 @@ class Circle3 {
 
 let c3 = new Circle3(9, "CRUD");
 c3.draw();
-console.log(c3.getRadius());
+c3.radius = 99;
+console.log(c3.radius);
+
+//video 166
