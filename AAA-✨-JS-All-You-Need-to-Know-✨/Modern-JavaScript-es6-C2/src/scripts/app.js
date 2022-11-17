@@ -251,6 +251,7 @@ let anotherDraw = s1.draw;
 
 const _radius = Symbol();
 const _name = Symbol();
+const _draw = Symbol();
 
 class Circle {
   constructor(radius, name) {
@@ -258,14 +259,34 @@ class Circle {
     this[_name] = name;
   }
 
-  draw() {
+  [_draw]() {
     console.log("Drawing...");
   }
 }
 
 let c1 = new Circle(2, "CRUD");
-console.log(c1);
+// console.log(c1);
 
-console.log(Object.getOwnPropertyNames(c1));
-let key = Object.getOwnPropertySymbols(c1)[1];
-console.log(c1[key]);
+// console.log(Object.getOwnPropertyNames(c1));
+let key = Object.getOwnPropertySymbols(c1)[0];
+// console.log(c1[key]);
+
+// Private Properties with WeakMap 🎱
+
+const _radius1 = new WeakMap();
+const _name1 = new WeakMap();
+
+class Circle1 {
+  constructor(radius, name) {
+    _radius1.set(this, radius);
+    _name1.set(this, name);
+  }
+
+  draw() {
+    console.log("Drawing...");
+    console.log(_radius1.get(this), _name1.get(this));
+  }
+}
+
+let c2 = new Circle1(5, "CRED");
+c2.draw();
