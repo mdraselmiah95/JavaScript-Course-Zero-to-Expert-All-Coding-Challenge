@@ -337,10 +337,10 @@ class Circle3 {
   }
 }
 
-let c3 = new Circle3(9, "CRUD");
-c3.draw();
-c3.radius = 99;
-console.log(c3.radius);
+// let c3 = new Circle3(9, "CRUD");
+// c3.draw();
+// c3.radius = 99;
+// console.log(c3.radius);
 
 // Inheritance in ES6 🕥
 /*
@@ -372,6 +372,12 @@ class Rectangle1 extends Shape1 {
   */
 import Rectangle1 from "./Rectangle";
 
-let r = new Rectangle1("Green", 9, 7);
-console.log(r);
-r.draw();
+// let r = new Rectangle1("Green", 9, 7);
+// console.log(r);
+// r.draw();
+
+//  ES6 Modules System ⚗️
+
+import * as func from "./func";
+
+console.log(func.add(12, 8));
