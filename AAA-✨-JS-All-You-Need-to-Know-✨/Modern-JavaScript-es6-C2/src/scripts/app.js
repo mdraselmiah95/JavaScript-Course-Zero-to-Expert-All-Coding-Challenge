@@ -216,4 +216,15 @@ class Person {
   print() {
     console.log(this.name, this.email);
   }
+  static create(str) {
+    let person = JSON.parse(str);
+    return new Person(person.name, person.email);
+  }
 }
+
+let str2 = '{"name":"Rasel mia","email":"rasel@gamil.com"}';
+
+let p1 = Person.create(str2);
+console.log(p1);
+console.log(p1 instanceof Person);
+p1.print();
