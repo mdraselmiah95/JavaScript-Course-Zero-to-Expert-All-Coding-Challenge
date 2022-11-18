@@ -1,3 +1,2 @@
 import "../styles/index.scss";
-
-console.log(99);
+import "../lessons/lesson2";
