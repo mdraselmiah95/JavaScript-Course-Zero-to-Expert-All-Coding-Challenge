@@ -33,7 +33,17 @@ function changeToInt(num) {
   return result;
 }
 
-let result = changeToInt("this is wrong input");
-console.log(result);
+// let result = changeToInt("this is wrong input");
+// console.log(result);
 
 //console.log(NaN === NaN);
+
+// Error Handling with Try Catch 🐜
+
+function makeWords(text) {
+  let str = text.trim();
+  let words = str.split(" ");
+  return words;
+}
+let words = makeWords(" THis is outer space.    ");
+console.log(words);
