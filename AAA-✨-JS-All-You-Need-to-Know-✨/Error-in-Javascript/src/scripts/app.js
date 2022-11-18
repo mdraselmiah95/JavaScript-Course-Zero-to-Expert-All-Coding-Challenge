@@ -58,5 +58,13 @@ function makeWords(text) {
   }
 }
 
-let words = makeWords(99);
-console.log(words);
+// let words = makeWords(99);
+// console.log(words);
+
+try {
+  console.log("i am line 1");
+  throw new Error("I am your error 💥");
+  console.log("i am line 1");
+} catch (error) {
+  console.log(error.message);
+}
