@@ -10,8 +10,31 @@ import "../styles/index.scss";
 
 //console.log(Number.MAX_VALUE);
 
+/*
 let n = 58;
 
 if (n > 50) {
   throw new RangeError("The number is too long.. 💣");
 }
+*/
+
+//console.log(a);
+
+// Error Handling with If Else 💢
+
+// let n = Number.parseInt("87");
+// console.log(n);
+
+function changeToInt(num) {
+  let result = Number.parseInt(num);
+  if (result === NaN) {
+    console.log(
+      "Please provide a value which will be able to convert in Integer."
+    );
+    return;
+  }
+  return result;
+}
+
+let result = changeToInt("5468.4");
+console.log(result);
