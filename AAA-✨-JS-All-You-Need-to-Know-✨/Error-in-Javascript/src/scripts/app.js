@@ -27,14 +27,13 @@ if (n > 50) {
 
 function changeToInt(num) {
   let result = Number.parseInt(num);
-  if (result === NaN) {
-    console.log(
-      "Please provide a value which will be able to convert in Integer."
-    );
-    return;
+  if (!result) {
+    return "Please provide a value which will be able to convert in Integer.";
   }
   return result;
 }
 
-let result = changeToInt("5468.4");
+let result = changeToInt("this is wrong input");
 console.log(result);
+
+//console.log(NaN === NaN);
