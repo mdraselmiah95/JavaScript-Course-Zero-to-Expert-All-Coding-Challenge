@@ -77,11 +77,37 @@ try {
 
 // Optional Catch Blinding 🏦
 
+/*
 try {
   console.log("i am line 1");
   throw new Error("I am your error 💥");
   console.log("i am line 1");
 } catch {
+  console.log("This is a Custom Error Massage 🎍");
+} finally {
+  console.log("I am finally BLock.");
+}
+*/
+
+// Create Custom Error 🌧️
+
+class CustomError extends Error {
+  constructor(msg) {
+    super(msg);
+
+    if (Error.captureStackTrace) {
+      Error.captureStackTrace(this, CustomError);
+    }
+  }
+}
+
+try {
+  console.log("i am line 1");
+  throw new Error("I am your error 💥");
+  console.log("i am line 1");
+} catch (error) {
+  //   console.log(error.message);
+  console.dir(error);
   console.log("This is a Custom Error Massage 🎍");
 } finally {
   console.log("I am finally BLock.");
