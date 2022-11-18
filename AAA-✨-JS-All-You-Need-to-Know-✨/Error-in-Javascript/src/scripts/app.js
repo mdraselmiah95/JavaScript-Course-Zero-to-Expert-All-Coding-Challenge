@@ -63,12 +63,26 @@ function makeWords(text) {
 
 // Throwing an Error 👽 and Finally Block in JavaScript 🎈
 
+/*
 try {
   console.log("i am line 1");
   throw new Error("I am your error 💥");
   console.log("i am line 1");
 } catch (error) {
   console.log(error.message);
+} finally {
+  console.log("I am finally BLock.");
+}
+*/
+
+// Optional Catch Blinding 🏦
+
+try {
+  console.log("i am line 1");
+  throw new Error("I am your error 💥");
+  console.log("i am line 1");
+} catch {
+  console.log("This is a Custom Error Massage 🎍");
 } finally {
   console.log("I am finally BLock.");
 }
