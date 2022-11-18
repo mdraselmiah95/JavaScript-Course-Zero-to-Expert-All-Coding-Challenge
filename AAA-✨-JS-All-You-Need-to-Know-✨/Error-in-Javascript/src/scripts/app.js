@@ -1,5 +1,9 @@
 import "../styles/index.scss";
 
-// Error in Javascript
-const a = 10;
-console.log(a);
+// Error in Javascript 🏸
+
+let n = 10;
+
+if (n > 5) {
+  throw console.error(" N is greater in 5");
+}
