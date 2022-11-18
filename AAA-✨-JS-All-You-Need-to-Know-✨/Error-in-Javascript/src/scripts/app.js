@@ -40,10 +40,23 @@ function changeToInt(num) {
 
 // Error Handling with Try Catch 🐜
 
+/*
 function makeWords(text) {
   let str = text.trim();
   let words = str.split(" ");
   return words;
 }
-let words = makeWords(" THis is outer space.    ");
+*/
+function makeWords(text) {
+  try {
+    let str = text.trim();
+    let words = str.split(" ");
+    return words;
+  } catch (error) {
+    // console.log(error.message);
+    console.log("Please Provide a Valid Text 🚦");
+  }
+}
+
+let words = makeWords(99);
 console.log(words);
