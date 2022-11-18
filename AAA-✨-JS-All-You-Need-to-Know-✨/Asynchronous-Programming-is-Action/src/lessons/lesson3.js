@@ -12,3 +12,9 @@ function sayMyName(name) {
 
 let output = sayMyName("Rasel mia");
 console.log(output);
+
+// Why does Javascript Act Like Asynchronous
+// How JS Handle Asynchronous
+// v8 Engine in Javascript
+// How to Handle Asynchronous Tasks
+// What is Ajax
