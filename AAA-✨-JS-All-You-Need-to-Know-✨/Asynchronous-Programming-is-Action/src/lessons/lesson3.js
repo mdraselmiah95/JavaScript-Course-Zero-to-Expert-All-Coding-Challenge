@@ -1,12 +1,13 @@
 // How to Store Result from Async Function 🏬
 
 function sayMyName(name) {
-  let result;
+  //   let result;
   setTimeout(() => {
     result = name;
-    console.log("I have done..");
+    // console.log("I have done..");
+    console.log(name);
   }, 3000);
-  return result;
+  //   return result;
 }
 
 let output = sayMyName("Rasel mia");
