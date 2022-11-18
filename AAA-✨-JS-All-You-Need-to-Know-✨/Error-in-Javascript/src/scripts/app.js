@@ -61,10 +61,14 @@ function makeWords(text) {
 // let words = makeWords(99);
 // console.log(words);
 
+// Throwing an Error 👽 and Finally Block in JavaScript 🎈
+
 try {
   console.log("i am line 1");
   throw new Error("I am your error 💥");
   console.log("i am line 1");
 } catch (error) {
   console.log(error.message);
+} finally {
+  console.log("I am finally BLock.");
 }
