@@ -43,3 +43,5 @@ let p6 = new Promise((resolve) => {
 
 let promiseArr2 = [p4, p5, p6];
 Promise.all(promiseArr).then((arr) => console.log(arr));
+
+// This go the as go the go went for this go the coolest.
