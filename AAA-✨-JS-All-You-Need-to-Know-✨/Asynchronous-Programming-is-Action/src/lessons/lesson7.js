@@ -26,8 +26,16 @@ function getIphone(isPassed) {
       if (isPassed) {
         resolve("I have Got an IPhone 📱");
       } else {
-        reject("You have Failed 😮‍💨");
+        reject(new Error("You have Failed 😮‍💨"));
       }
     }, 2000);
   });
 }
+
+getIphone(false)
+  .then((res) => {
+    console.log(res);
+  })
+  .catch((e) => {
+    console.log(e.message);
+  });
