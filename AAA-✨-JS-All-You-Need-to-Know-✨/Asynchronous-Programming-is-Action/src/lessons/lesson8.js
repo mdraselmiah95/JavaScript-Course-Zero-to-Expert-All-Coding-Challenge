@@ -21,3 +21,13 @@ let res1 = fetch(BASE_URL)
   .then((res) => res.json())
   .then((data) => console.log(data))
   .catch((err) => console.log(err));
+
+/*
+  getRequest(function () {
+  getRequest(function () {
+    getRequest(function () {
+      getRequest(function () {});
+    });
+  });
+});
+  */
