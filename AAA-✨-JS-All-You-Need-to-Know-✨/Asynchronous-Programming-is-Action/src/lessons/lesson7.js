@@ -32,7 +32,7 @@ function getIphone(isPassed) {
   });
 }
 
-getIphone(false)
+getIphone(true)
   .then((res) => {
     console.log(res);
   })
