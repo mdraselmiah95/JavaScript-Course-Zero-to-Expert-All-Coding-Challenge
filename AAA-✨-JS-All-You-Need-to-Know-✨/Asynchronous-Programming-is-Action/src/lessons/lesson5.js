@@ -7,7 +7,8 @@ let sqr = arr.map((v) => v * v);
 
 function asyncMap(arr, cb) {
   return arr.map((v) => {
-    setTimeout(cb.bind(null, v), 0);
+    // setTimeout(cb.bind(null, v), 0);
+    setTimeout(() => cb(v), 0);
   });
 }
 
