@@ -39,7 +39,7 @@ getRequest("https://jsonplaceholder.typicode.com/users", (err, res) => {
   if (err) {
     console.log(err);
   } else {
-    res.forEach((user) => alert(user.name));
+    // res.forEach((user) => console.log(user.name));
   }
 });
 
@@ -48,6 +48,31 @@ getRequest("https://jsonplaceholder.typicode.com/posts", (err, res) => {
     console.log(err);
   } else {
     // console.log(res);
-    res.forEach((post) => console.log(post.title));
+    // res.forEach((post) => console.log(post.title));
   }
 });
+
+const BASE_URL = "https://jsonplaceholder.typicode.com";
+
+function getNewRequest(url) {
+  return new Promise((resolve, reject) => {
+    const xhr = new XMLHttpRequest();
+    xhr.open("get", url);
+
+    xhr.onreadystatechange = function (e) {
+      if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+          let response = JSON.parse(xhr.response);
+          resolve(response);
+        } else {
+          reject(new Error("Error Occurred 💥"));
+        }
+      }
+    };
+    xhr.send();
+  });
+}
+
+getNewRequest(`${BASE_URL}/users/10`)
+  .then((data) => console.log(data))
+  .catch((err) => console.log(err));
