@@ -19,3 +19,27 @@ p1.then((v) => console.log(v));
 let p2 = Promise.reject("REJECT");
 p2.then((e) => console.log(e));
 */
+
+let p1 = Promise.resolve("ONE");
+let p2 = Promise.resolve("TWO");
+let p3 = Promise.resolve("THREE");
+
+let promiseArr = [p1, p2, p3];
+Promise.all(promiseArr).then((arr) => {
+  //   console.log(arr);
+});
+
+let p4 = new Promise((resolve) => {
+  setTimeout(resolve, 4000, "ONE");
+});
+
+let p5 = new Promise((resolve) => {
+  setTimeout(resolve, 3000, "TWO");
+});
+
+let p6 = new Promise((resolve) => {
+  setTimeout(resolve, 2000, "THREE");
+});
+
+let promiseArr2 = [p4, p5, p6];
+Promise.all(promiseArr).then((arr) => console.log(arr));
