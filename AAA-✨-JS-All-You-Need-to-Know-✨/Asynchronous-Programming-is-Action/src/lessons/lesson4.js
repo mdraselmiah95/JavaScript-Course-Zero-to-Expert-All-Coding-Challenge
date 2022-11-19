@@ -32,3 +32,22 @@ function getRequest(url, callback) {
   };
   xhr.send();
 }
+
+// https://jsonplaceholder.typicode.com/users
+
+getRequest("https://jsonplaceholder.typicode.com/users", (err, res) => {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log(res);
+  }
+});
+
+getRequest("https://jsonplaceholder.typicode.com/posts", (err, res) => {
+  if (err) {
+    console.log(err);
+  } else {
+    // console.log(res);
+    res.forEach((post) => console.log(post.title));
+  }
+});
