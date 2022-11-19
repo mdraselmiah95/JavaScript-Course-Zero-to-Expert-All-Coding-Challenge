@@ -18,4 +18,3 @@ console.log(output);
 // v8 Engine in Javascript 🥉
 // How to Handle Asynchronous Tasks 🥇
 // What is Ajax => Asynchronous JavaScript and XML (JSON) 🥉
-// video 184
