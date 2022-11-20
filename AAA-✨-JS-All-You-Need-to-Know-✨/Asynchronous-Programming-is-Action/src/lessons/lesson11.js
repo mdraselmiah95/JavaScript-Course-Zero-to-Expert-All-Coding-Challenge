@@ -10,8 +10,15 @@ let asyncIterable = {
             value: i++,
             done: false,
           });
+        } else {
+          return Promise.resolve({
+            done: true,
+          });
         }
       },
     };
   },
 };
+
+let iterate = asyncIterable[Symbol.asyncIterator]();
+console.log(iterate.next());
