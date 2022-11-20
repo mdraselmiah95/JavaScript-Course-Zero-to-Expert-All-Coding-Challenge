@@ -22,3 +22,13 @@ let asyncIterable = {
 
 let iterate = asyncIterable[Symbol.asyncIterator]();
 console.log(iterate.next());
+
+(async function () {
+  //   let v = await iterate.next();
+  //   console.log(v);
+  console.log(await iterate.next());
+  console.log(await iterate.next());
+  console.log(await iterate.next());
+  console.log(await iterate.next());
+  console.log(await iterate.next());
+})();
