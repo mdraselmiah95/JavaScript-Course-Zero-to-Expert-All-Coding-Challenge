@@ -21,14 +21,22 @@ let asyncIterable = {
 };
 
 let iterate = asyncIterable[Symbol.asyncIterator]();
-console.log(iterate.next());
+// console.log(iterate.next());
+
+// (async function () {
+//   //   let v = await iterate.next();
+//   //   console.log(v);
+//   console.log(await iterate.next());
+//   console.log(await iterate.next());
+//   console.log(await iterate.next());
+//   console.log(await iterate.next());
+//   console.log(await iterate.next());
+// })();
+
+//  For Await of Loop in Javascript 🌬️
 
 (async function () {
-  //   let v = await iterate.next();
-  //   console.log(v);
-  console.log(await iterate.next());
-  console.log(await iterate.next());
-  console.log(await iterate.next());
-  console.log(await iterate.next());
-  console.log(await iterate.next());
+  for await (let v of asyncIterable) {
+    console.log(v);
+  }
 })();
