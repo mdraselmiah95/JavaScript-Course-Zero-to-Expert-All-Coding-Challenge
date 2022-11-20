@@ -21,7 +21,14 @@ let p1 = new Promise((resolve) => {
 async function myAsyncFunc() {
   //   p1.then((v) => alert(v));
   let v = await p1;
-  console.log(v);
+  //   console.log(v);
 }
 
 myAsyncFunc();
+
+async function fetchData() {
+  let res = await fetch("https://jsonplaceholder.typicode.com");
+  console.log(res);
+}
+
+fetchData();
