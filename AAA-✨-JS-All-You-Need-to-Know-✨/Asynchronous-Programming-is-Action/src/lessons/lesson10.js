@@ -27,9 +27,23 @@ async function myAsyncFunc() {
 // myAsyncFunc();
 
 async function fetchData() {
-  let res = await fetch("https://jsonplaceholder.typicode.com/users");
-  let data = await res.json();
-  console.log(data);
+  try {
+    let res = await fetch("https://jsonplaceholder.typicode.com/users");
+    let data = await res.json();
+    let name = data.map((v) => v.name);
+    console.log(name);
+  } catch (error) {
+    console.log(error.message);
+  }
 }
 
-fetchData();
+// fetchData();
+
+let promises = [Promise.resolve(1), Promise.resolve(2), Promise.resolve(3)];
+
+async function promiseAll() {
+  let result = await Promise.all(promises);
+  console.log(result);
+}
+
+promiseAll();
