@@ -3,10 +3,21 @@
 function myPromise() {
   return Promise.resolve("PROMISE RESOLVE");
 }
-console.log(myPromise());
+//console.log(myPromise());
 
+/*
 async function test() {
   return "TEST ASYNC";
 }
 
 console.log(test());
+*/
+
+let p1 = Promise.resolve("I AM A PROMISE");
+async function myAsyncFunc() {
+  //   p1.then((v) => alert(v));
+  let v = await p1;
+  console.log("TEST");
+}
+
+myAsyncFunc();
