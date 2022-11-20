@@ -7,4 +7,5 @@ import "../styles/index.scss";
 // import "../lessons/lesson7";
 // import "../lessons/lesson8";
 // import "../lessons/lesson9";
-import "../lessons/lesson10";
+// import "../lessons/lesson10";
+import "../lessons/lesson11";
