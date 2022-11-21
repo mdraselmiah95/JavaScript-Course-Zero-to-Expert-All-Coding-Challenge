@@ -8,15 +8,36 @@
 // let list = document.getElementById("list");
 // list.appendChild(li);
 
-let li = createElement("li", "Four", "list-group-item");
+let li = createElement("li", "list-group-item", "Four");
 li.setAttribute("title", "I am number Item");
 
 let list = document.getElementById("list");
 list.appendChild(li);
 
-function createElement(tagName, innerHTML, className) {
+let p1 = createElement(
+  "p",
+  "lead",
+  "This is a first paragraph and also very powerful telling paragraph. This is first paragraph also."
+);
+
+let p2 = createElement(
+  "p",
+  "lead",
+  "This is a first paragraph and also very powerful telling paragraph. This is first paragraph also."
+);
+
+let div = createElement("div");
+append(div, [p1, p2]);
+
+console.log(div);
+
+function createElement(tagName, className, innerHTML) {
   let tag = document.createElement(tagName);
-  tag.innerHTML = innerHTML;
+  tag.innerHTML = innerHTML || "";
   tag.className = className || "";
   return tag;
+}
+
+function append(patent, children) {
+  children.forEach((child) => patent.appendChild(child));
 }
