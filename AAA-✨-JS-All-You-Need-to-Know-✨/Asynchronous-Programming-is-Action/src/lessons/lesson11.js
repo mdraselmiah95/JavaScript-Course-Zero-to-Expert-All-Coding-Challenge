@@ -57,5 +57,3 @@ async function* myAsyncGenerator() {
     console.log(v);
   }
 })();
-
-// multipartite cool and exciting too and complex idea is everything  coolest
