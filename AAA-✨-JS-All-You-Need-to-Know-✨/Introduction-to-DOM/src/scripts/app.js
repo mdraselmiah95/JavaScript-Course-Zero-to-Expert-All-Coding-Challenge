@@ -1,3 +1,6 @@
 import "../styles/index.scss";
 
-console.log(66);
+let list = document.getElementById("list");
+
+let parent = list.parentElement;
+console.log(parent);
