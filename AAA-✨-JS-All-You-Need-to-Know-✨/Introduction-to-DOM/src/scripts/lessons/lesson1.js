@@ -22,7 +22,9 @@ let listItem = document.getElementsByTagName("li");
 // let listItems = Array.from(listItem);
 // console.log(listItems);
 
-let listItems = Array.prototype.slice.apply(listItem);
+// let listItems = Array.prototype.slice.apply(listItem);
+
+let listItems = [...listItem];
 
 listItems.forEach((li, index) => {
   let text = li.innerHTML;
