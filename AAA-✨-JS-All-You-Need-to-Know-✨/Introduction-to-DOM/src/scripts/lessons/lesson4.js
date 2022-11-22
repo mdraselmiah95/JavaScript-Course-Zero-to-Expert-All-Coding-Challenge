@@ -9,3 +9,9 @@ let btn = document.getElementById("btn");
 btn.addEventListener("click", function (e) {
   alert("I have clicked");
 });
+
+let box = document.getElementById("box");
+box.addEventListener("mousemove", function (e) {
+  document.getElementById("x-value").innerHTML = e.clientX;
+  document.getElementById("y-value").innerHTML = e.clientY;
+});
