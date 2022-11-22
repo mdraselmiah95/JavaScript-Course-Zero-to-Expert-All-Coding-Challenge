@@ -14,6 +14,15 @@ btn.addEventListener("click", function (e) {
   list.appendChild(item);
 });
 
+// Event Delegation Problem
+
+// [...list.children].forEach((li) => {
+//   console.log(li);
+//   li.onClink = function (e) {
+//     e.target.remove();
+//   };
+// });
+
 let box = document.getElementById("box");
 box.addEventListener("mousemove", function (e) {
   document.getElementById("x-value").innerHTML = e.offsetX;
