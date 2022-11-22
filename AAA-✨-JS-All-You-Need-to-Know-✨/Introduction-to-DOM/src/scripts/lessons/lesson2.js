@@ -51,4 +51,9 @@ function append(patent, children) {
 let firstChild = list.firstElementChild;
 setTimeout(() => {
   firstChild.innerHTML = firstChild.innerHTML + ` (Modified)`;
+  firstChild.style.color = "green";
 }, 5000);
+
+setTimeout(() => {
+  list.lastChild.remove();
+}, 3000);
