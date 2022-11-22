@@ -28,19 +28,27 @@ let checkedSkills = [];
   })
 );
 
-// List and Input Event Handler 👜
+// 212 List and Input Event Handler 👜
 
 let list = document.getElementById("list");
-console.log(list);
 
-list.addEventListener("dblclick", function (e) {
-  if (this.contains(e.target)) {
-    let innerText = e.target.value;
-    v.target.innerHTML = "";
+list.addEventListener("dblclick", function (event) {
+  if (this.contains(event.target)) {
+    let innerText = event.target.innerText;
+    event.target.innerHTML = "";
+
+    let inputBox = createInputBox(innerText);
+    event.target.appendChild(inputBox);
+
+    inputBox.addEventListener("keypress", function (e) {
+      if (e.key === "Enter") {
+        event.target.innerHTML = e.target.value;
+      }
+    });
   }
 });
 
-function createInputBox() {
+function createInputBox(value) {
   let inp = document.createElement("input");
   inp.type = "text";
   inp.className = "form-control";
