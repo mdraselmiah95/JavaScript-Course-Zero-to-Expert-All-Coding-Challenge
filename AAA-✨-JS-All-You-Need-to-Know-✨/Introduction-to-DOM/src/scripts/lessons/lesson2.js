@@ -45,3 +45,10 @@ function createElement(tagName, className, innerHTML) {
 function append(patent, children) {
   children.forEach((child) => patent.appendChild(child));
 }
+
+// Remove and Update Element 👩‍🎓
+
+let firstChild = list.firstElementChild;
+setTimeout(() => {
+  firstChild.innerHTML = firstChild.innerHTML + ` (Modified)`;
+}, 5000);
