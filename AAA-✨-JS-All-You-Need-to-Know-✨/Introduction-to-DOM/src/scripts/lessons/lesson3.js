@@ -18,3 +18,5 @@ let styleObj = {
 let list = document.getElementById("list");
 
 [...list.children].forEach((li) => Object.assign(li.style, styleObj));
+
+// hello welcome solution the the coolest
