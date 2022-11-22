@@ -8,3 +8,13 @@ name.addEventListener("keypress", function (e) {
     e.target.value = "";
   }
 });
+
+// 211 Check Box Event Handing in JavaScript 🏁
+
+let skills = document.getElementsByName("skills");
+
+[...skills].forEach((skill) =>
+  skill.addEventListener("change", function (e) {
+    console.log(e.target.checked);
+  })
+);
