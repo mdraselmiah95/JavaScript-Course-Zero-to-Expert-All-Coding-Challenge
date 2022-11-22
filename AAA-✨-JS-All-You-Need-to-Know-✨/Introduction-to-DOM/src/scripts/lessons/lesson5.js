@@ -27,3 +27,16 @@ let checkedSkills = [];
     }
   })
 );
+
+// List and Input Event Handler 👜
+
+let list = document.getElementById("list");
+console.log(list);
+
+list.addEventListener("dblclick", function (e) {
+  console.log("Double Click");
+});
+
+list.addEventListener("click", function (e) {
+  console.log("click");
+});
