@@ -4,7 +4,7 @@ let name = document.getElementById("name");
 
 name.addEventListener("keypress", function (e) {
   if (e.key === "Enter") {
-    console.log(e.target.value);
+    document.getElementById("showName").innerHTML = `${e.target.value}`;
     e.target.value = "";
   }
 });
