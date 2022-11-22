@@ -51,9 +51,16 @@ function append(patent, children) {
 let firstChild = list.firstElementChild;
 setTimeout(() => {
   firstChild.innerHTML = firstChild.innerHTML + ` (Modified)`;
-  firstChild.style.color = "green";
+  // firstChild.style.color = "green";
+  firstChild.classList.add("text-warning");
 }, 5000);
 
+/*
 setTimeout(() => {
   list.lastChild.remove();
 }, 3000);
+*/
+
+let lastItem = list.lastElementChild.cloneNode();
+lastItem.innerHTML = "FIVE";
+list.appendChild(lastItem);
