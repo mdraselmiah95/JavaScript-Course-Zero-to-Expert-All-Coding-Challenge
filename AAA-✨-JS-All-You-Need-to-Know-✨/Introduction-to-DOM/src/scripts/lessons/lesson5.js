@@ -20,6 +20,10 @@ let checkedSkills = [];
     if (e.target.checked) {
       checkedSkills.push(e.target.value);
       console.log(checkedSkills);
+    } else {
+      let ind = checkedSkills.indexOf(e.target.value);
+      checkedSkills.splice(ind, 1);
+      console.log(checkedSkills);
     }
   })
 );
