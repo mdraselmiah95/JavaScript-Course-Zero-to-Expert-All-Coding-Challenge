@@ -31,7 +31,9 @@ append(div, [p1, p2]);
 
 // console.log(div);
 
-document.getElementsByClassName("container")[0].appendChild(div);
+list.insertAdjacentElement("afterend", div);
+
+// document.getElementsByClassName("container")[0].appendChild(div);
 
 function createElement(tagName, className, innerHTML) {
   let tag = document.createElement(tagName);
