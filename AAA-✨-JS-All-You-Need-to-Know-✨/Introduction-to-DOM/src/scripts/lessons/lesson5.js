@@ -34,9 +34,17 @@ let list = document.getElementById("list");
 console.log(list);
 
 list.addEventListener("dblclick", function (e) {
-  console.log("Double Click");
+  if (this.contains(e.target)) {
+    let innerText = e.target.value;
+    v.target.innerHTML = "";
+  }
 });
 
-list.addEventListener("click", function (e) {
-  console.log("click");
-});
+function createInputBox() {
+  let inp = document.createElement("input");
+  inp.type = "text";
+  inp.className = "form-control";
+  inp.value = value;
+
+  return inp;
+}
