@@ -61,6 +61,11 @@ setTimeout(() => {
 }, 3000);
 */
 
-let lastItem = list.lastElementChild.cloneNode();
+let lastItem = list.lastElementChild.cloneNode(true);
 lastItem.innerHTML = "FIVE";
 list.appendChild(lastItem);
+
+// console.log(list.attributes);
+// console.log(list.getAttributeNames());
+// console.log(list.getAttributeNode("class"));
+console.log(list.getAttribute("id"));
