@@ -6,8 +6,12 @@ let btn = document.getElementById("btn");
 //   console.log(e);
 // };
 
+let list = document.getElementById("list");
+
 btn.addEventListener("click", function (e) {
-  alert("I have clicked");
+  let item = list.lastElementChild.cloneNode(true);
+  item.innerHTML = "Newly Item.";
+  list.appendChild(item);
 });
 
 let box = document.getElementById("box");
@@ -15,6 +19,6 @@ box.addEventListener("mousemove", function (e) {
   document.getElementById("x-value").innerHTML = e.offsetX;
   document.getElementById("y-value").innerHTML = e.offsetY;
   if (e.offsetY === 50 && e.offsetX) {
-    alert("50 50");
+    alert("50 🌬️ 50 ");
   }
 });
