@@ -37,3 +37,5 @@ box.addEventListener("mousemove", function (e) {
     alert("50 🌬️ 50 ");
   }
 });
+
+// this is true code event delegation do the thing for the the this cool the  good top of the notch the most important to of the not stop the bang
