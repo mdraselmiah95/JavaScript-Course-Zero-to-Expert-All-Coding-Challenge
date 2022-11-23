@@ -12,4 +12,5 @@ form.addEventListener("submit", function (e) {
     }
   });
   console.log(formData);
+  this.reset();
 });
