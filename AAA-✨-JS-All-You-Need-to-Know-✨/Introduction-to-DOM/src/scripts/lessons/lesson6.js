@@ -14,3 +14,11 @@ form.addEventListener("submit", function (e) {
   console.log(formData);
   this.reset();
 });
+
+function validator(el) {
+  if (!el.value) {
+    return false;
+  }
+
+  return true;
+}
