@@ -36,3 +36,9 @@ postForm.addEventListener("click", function (e) {
     alert("Please provide Every Details. 💢");
   }
 });
+
+function listItemGenerator(item) {
+  let li = document.createElement("li");
+  li.className = "list-group-item";
+  li.innerHTML = `${item.id} ${item.title} By User ID- ${item.userId}`;
+}
