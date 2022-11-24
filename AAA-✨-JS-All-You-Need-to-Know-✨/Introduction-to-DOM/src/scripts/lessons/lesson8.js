@@ -58,3 +58,14 @@ function listItemGenerator(item) {
  * Web Socket
  * Local Storage, Cookies and Browser Database
  */
+
+// Some Popular JavaScript Library 🚈
+/**
+ * Jquery
+ * Lodash
+ * Underscore
+ * Math JS
+ * Moment JS
+ * Collect JS
+ * Axios
+ */
