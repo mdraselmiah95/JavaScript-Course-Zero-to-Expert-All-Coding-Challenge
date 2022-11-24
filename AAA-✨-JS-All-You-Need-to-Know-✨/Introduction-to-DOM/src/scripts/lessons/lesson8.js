@@ -28,8 +28,11 @@ postForm.addEventListener("click", function (e) {
       body: JSON.stringify(postObj),
     })
       .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
+      .then((post) => {
+        // console.log(data);
+        let item = listItemGenerator(post);
+        posts.appendChild(item);
+        this.reset();
       })
       .catch((e) => console.log(e.message));
   } else {
@@ -41,4 +44,6 @@ function listItemGenerator(item) {
   let li = document.createElement("li");
   li.className = "list-group-item";
   li.innerHTML = `${item.id} ${item.title} By User ID- ${item.userId}`;
+
+  return li;
 }
