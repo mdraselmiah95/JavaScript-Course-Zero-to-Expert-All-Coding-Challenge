@@ -9,20 +9,18 @@ load.addEventListener("click", function () {
   fetch(URL)
     .then((res) => res.json())
     .then((posts) => {
-      posts.forEach((post) => {
-        let listItem = listItemGenerator(post);
+      posts.forEach((post, index) => {
+        let listItem = listItemGenerator(post, index + 1);
         postList.appendChild(listItem);
       });
     })
     .catch((error) => console.log(error.message));
 });
 
-function listItemGenerator(item) {
+function listItemGenerator(item, no) {
   let li = document.createElement("li");
   li.className = "list-group-item";
-  li.innerHTML = item.name;
+  li.innerHTML = `${no}. ${item.name}`;
 
   return li;
 }
-
-//This is cool
