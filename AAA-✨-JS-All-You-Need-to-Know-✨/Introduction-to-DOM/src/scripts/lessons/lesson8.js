@@ -26,7 +26,12 @@ postForm.addEventListener("click", function (e) {
         "Content-type": "Application/JSON",
       },
       body: JSON.stringify(postObj),
-    });
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+      })
+      .catch((e) => console.log(e.message));
   } else {
     alert("Please provide Every Details. 💢");
   }
