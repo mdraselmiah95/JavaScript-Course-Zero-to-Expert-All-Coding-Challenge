@@ -10,7 +10,6 @@ postForm.addEventListener("click", function (e) {
 
   let title = this.title.value || undefined;
   let body = this.body.value || undefined;
-
   if (title && body) {
     let postObj = {
       userId: 100,
@@ -47,3 +46,15 @@ function listItemGenerator(item) {
 
   return li;
 }
+
+/**
+ * Canvas
+ * SVG
+ * Drag and Drop
+ * transition
+ * Location
+ * Audio,Video
+ * Speech Recognition
+ * Web Socket
+ * Local Storage, Cookies and Browser Database
+ */
