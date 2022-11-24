@@ -59,7 +59,7 @@ function listItemGenerator(item) {
  * Local Storage, Cookies and Browser Database
  */
 
-// Some Popular JavaScript Library 🚈
+// Some Popular JavaScript Library 🚈 🧩
 /**
  * Jquery
  * Lodash
